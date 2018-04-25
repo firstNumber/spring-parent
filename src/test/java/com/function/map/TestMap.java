@@ -22,5 +22,12 @@ public class TestMap {
         }};
         map.forEach((k,v)-> System.out.println(k+"\t"+v));
 
+        map.forEach((k,v)->{
+            System.out.println("item:"+k+"code:"+v);
+            if("E".equals(k)){
+                System.out.println("Hello E");
+            }
+        });
+
     }
 }
