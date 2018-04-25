@@ -1,0 +1,12 @@
+package ${pkgPath};
+
+import org.springframework.stereotype.Repository;
+
+import com.${companyName}.common.dao.impl.BaseDaoImpl;
+import ${daoPath};
+import ${modelPath};
+
+@Repository("${clzNameLC}DaoImpl")
+public class ${clzName}DaoImpl extends BaseDaoImpl<${clzName}> implements ${clzName}Dao {
+
+}

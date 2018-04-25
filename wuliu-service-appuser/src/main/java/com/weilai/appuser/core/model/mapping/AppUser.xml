@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.weilai.appuser.core.model.AppUser">
+
+	<resultMap id="result" type="com.weilai.appuser.core.model.AppUser">
+            <id property="id" column="id" jdbcType="INTEGER" />
+            <result property="userId" column="userId" jdbcType="VARCHAR" />
+            <result property="phone" column="phone" jdbcType="VARCHAR" />
+            <result property="nickName" column="nickName" jdbcType="VARCHAR" />
+            <result property="token" column="token" jdbcType="VARCHAR" />
+
+	</resultMap>
+
+	<sql id="base_field">
+		id,userId,phone,nickName,token
+	</sql>
+	
+	<sql id="other-condition">
+            <if test= "userId != null ">	and userId = #{userId,jdbcType=VARCHAR }</if>
+            <if test= "phone != null ">	and phone = #{phone,jdbcType=VARCHAR }</if>
+            <if test= "nickName != null ">	and nickName = #{nickName,jdbcType=VARCHAR }</if>
+            <if test= "token != null ">	and token = #{token,jdbcType=VARCHAR }</if>
+
+ 	</sql>
+ 	
+ 	<sql id="like-condition">
+            <if test= "userId != null ">	and userId like "%"#{userId}"%"</if>
+            <if test= "phone != null ">	and phone like "%"#{phone}"%"</if>
+            <if test= "nickName != null ">	and nickName like "%"#{nickName}"%"</if>
+            <if test= "token != null ">	and token like "%"#{token}"%"</if>
+
+ 	</sql>
+	
+	<sql id="selectByMapSQL">
+		select
+		<include refid="base_field" />
+		from app_user
+		<choose>
+		    <when test="findBy != null">
+		      	<where>
+					<include refid="other-condition" />
+				</where>
+		    </when>
+		    <when test="findByLike != null">
+		      	<where>
+					<include refid="like-condition" />
+				</where>
+		    </when>
+		</choose>
+		<if test="sortName != null">
+			order by ${sortName} ${sortBy}
+		</if>
+	</sql>
+	
+	<select id="selectByMap" resultMap="result" >
+		<include refid="selectByMapSQL" />
+	</select>
+	
+	<select id="selectCount" resultType="int" >
+		select count(*) from (
+			<include refid="selectByMapSQL" />
+		) AABBCC_
+	</select>
+	
+	<select id="selectPage" resultMap="result" >
+		<include refid="selectByMapSQL" />
+		 limit #{startRow},#{pageSize}
+	</select>
+	
+	<select id="select" resultMap="result" parameterType="java.lang.Integer">
+		select
+		<include refid="base_field" />
+		from app_user  
+		<where>
+			<if test="_parameter != null">
+				id = #{id,jdbcType=INTEGER}
+			</if>
+		</where>
+	</select>
+	
+	<select id="selectByIds" resultMap="result" >
+		select
+		<include refid="base_field" />
+		from app_user  where id in (${_parameter})
+	</select>		
+
+	<insert id="insert" parameterType="com.weilai.appuser.core.model.AppUser" useGeneratedKeys="true" keyProperty="id">
+		insert into app_user( id,userId,phone,nickName,token ) values (#{id,jdbcType=INTEGER},#{userId,jdbcType=VARCHAR},#{phone,jdbcType=VARCHAR},#{nickName,jdbcType=VARCHAR},#{token,jdbcType=VARCHAR} )
+	</insert>
+
+	<update id="update" parameterType="com.weilai.appuser.core.model.AppUser">
+		update app_user set userId=#{userId,jdbcType=VARCHAR},phone=#{phone,jdbcType=VARCHAR},nickName=#{nickName,jdbcType=VARCHAR},token=#{token,jdbcType=VARCHAR} where id=#{id,jdbcType=INTEGER}
+	</update>	
+	
+	<update id="update4Selective" parameterType="com.weilai.appuser.core.model.AppUser">
+		update app_user
+        <set>
+            <if test="userId != null "> 
+                userId = #{userId,jdbcType=VARCHAR},
+            </if>
+            <if test="phone != null "> 
+                phone = #{phone,jdbcType=VARCHAR},
+            </if>
+            <if test="nickName != null "> 
+                nickName = #{nickName,jdbcType=VARCHAR},
+            </if>
+            <if test="token != null "> 
+                token = #{token,jdbcType=VARCHAR},
+            </if>
+        </set>
+         where id=#{id,jdbcType=INTEGER}
+	</update>	
+
+	<delete id="deleteByPrimaryKey">
+		delete from app_user where id = #{id,jdbcType=INTEGER}
+	</delete>	
+
+	<delete id="delete" parameterType="com.weilai.appuser.core.model.AppUser">
+		delete from app_user
+		<where>
+			<if test="id != null">
+				id = #{id,jdbcType=INTEGER}
+			</if>
+			<include refid="other-condition" />
+		</where>
+	</delete>	
+		
+</mapper>
+

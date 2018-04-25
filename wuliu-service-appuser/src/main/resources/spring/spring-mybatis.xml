@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+  http://www.springframework.org/schema/beans/spring-beans.xsd  
+  http://www.springframework.org/schema/context  
+  http://www.springframework.org/schema/context/spring-context.xsd  
+  http://www.springframework.org/schema/mvc  
+  http://www.springframework.org/schema/mvc/spring-mvc.xsd
+  http://www.springframework.org/schema/aop 
+  http://www.springframework.org/schema/aop/spring-aop.xsd
+  http://www.springframework.org/schema/tx 
+  http://www.springframework.org/schema/tx/spring-tx.xsd">
+  
+	<!-- 自动扫描 -->
+	<context:component-scan base-package="com.weilai.*" use-default-filters="false">
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Repository"/> 
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/> 
+	 </context:component-scan>
+	
+
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="${db.driver}" />
+		<property name="url" value="${lyz.db.url}" />
+		<property name="username" value="${lyz.db.username}" />
+		<property name="password" value="${lyz.db.password}" />
+		<!-- 初始化连接大小 -->
+		<property name="initialSize" value="${db.initialSize}"></property>
+		<!-- 连接池最大数量 -->
+		<property name="maxActive" value="${db.maxActive}"></property>
+		<!-- 连接池最大空闲 -->
+		<property name="maxIdle" value="${db.maxIdle}"></property>
+		<!-- 连接池最小空闲 -->
+		<property name="minIdle" value="${db.minIdle}"></property>
+		<!-- 获取连接最大等待时间 -->
+		<property name="maxWait" value="${db.maxWait}"></property>
+		<!-- 空闲连接回收 -->
+    	<property name="timeBetweenEvictionRunsMillis" value="${db.timeBetweenEvictionRunsMillis}"/>
+    	<!-- 每次取出连接是否进行测试,如果为true,影响性能 -->
+    	<property name="testOnBorrow" value="false"/>
+    	<!-- 测试连接执行的sql -->
+		<property name="validationQuery" value="SELECT 1" />
+		<!-- 空闲时是否进行验证，检查对象是否有效，默认为false -->
+    	<property name="testWhileIdle" value="true"/>
+	</bean>
+
+	<!-- spring和MyBatis完美整合，不需要mybatis的配置映射文件 -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<!-- 自动扫描mapping.xml文件 -->
+		<property name="mapperLocations" value="classpath*:com/weilai/**/model/mapping/*.xml"></property>
+	</bean>	
+
+	<!-- basedao使用 -->
+	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate"
+		scope="prototype">
+		<constructor-arg index="0" ref="sqlSessionFactory" />
+	</bean>
+
+	<bean id="restTemplate" class="org.springframework.web.client.RestTemplate" />
+
+	<!-- (事务管理)transaction manager, use JtaTransactionManager for global tx -->
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<!-- set leval -->
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<!-- all methods starting with 'get' are read-only -->
+			<tx:method name="get*" read-only="true" />
+			<tx:method name="list*" read-only="true" />
+			<tx:method name="query*" read-only="true" />
+			<tx:method name="search*" read-only="true" />
+			<tx:method name="find*" read-only="true" />
+			<tx:method name="check*" read-only="true" />
+			<tx:method name="newLog*" propagation="NOT_SUPPORTED" />
+			<!-- other methods use the default transaction settings -->
+			<tx:method name="*" rollback-for="Exception" />	<!-- all exception rollback -->
+		</tx:attributes>
+	</tx:advice>
+
+	<!-- set class -->
+	<aop:config>
+		<aop:pointcut id="managerOperation"
+			expression="execution(* com.weilai.*.service.*Service.*(..)) or execution (* com.weilai.*.*.service.*Service.*(..))" />
+		<aop:advisor pointcut-ref="managerOperation" advice-ref="txAdvice" />
+	</aop:config>
+
+	<!-- service层aop异常-->
+<!-- 	<bean id="serviceEx" class="com.weilai.common.exception.ServiceExceptionHandler" />   -->
+<!-- 	<aop:config> -->
+<!-- 		<aop:aspect id="exServiceAop" ref="serviceEx">   -->
+<!--             <aop:pointcut id="exParam" expression="execution(* com.weilai.*.service.*Service.*(..)) or execution (* com.zhidian.*.*.service.*Service.*(..))" />   -->
+<!--             <aop:after-throwing pointcut-ref="exParam" method="doThrowing" throwing="ex" />   -->
+<!--         </aop:aspect>  -->
+<!-- 	</aop:config>	 -->
+</beans>

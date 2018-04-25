@@ -1,0 +1,9 @@
+package ${pkgPath};
+
+import com.${companyName}.common.dao.BaseDao;
+import ${modelPath};
+
+public interface ${clzName}Dao extends BaseDao<${clzName}>{
+
+}
+

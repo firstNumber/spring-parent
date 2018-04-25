@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.weilai.user.account.model.Carbox">
+
+	<resultMap id="result" type="com.weilai.user.account.model.Carbox">
+            <id property="id" column="id" jdbcType="INTEGER" />
+            <result property="boxLength" column="boxLength" jdbcType="NUMERIC" />
+            <result property="createTime" column="createTime" />
+
+	</resultMap>
+
+	<sql id="base_field">
+		id,boxLength,createTime
+	</sql>
+	
+	<sql id="other-condition">
+            <if test= "boxLength != null ">	and boxLength = #{boxLength,jdbcType=NUMERIC }</if>
+            <if test= "createTime != null ">	and createTime = #{createTime }</if>
+
+ 	</sql>
+ 	
+ 	<sql id="like-condition">
+            <if test= "boxLength != null ">	and boxLength = #{boxLength,jdbcType=NUMERIC }</if>
+            <if test= "createTime != null ">	and createTime = #{createTime }</if>
+
+ 	</sql>
+	
+	<sql id="selectByMapSQL">
+		select
+		<include refid="base_field" />
+		from carbox
+		<choose>
+		    <when test="findBy != null">
+		      	<where>
+					<include refid="other-condition" />
+				</where>
+		    </when>
+		    <when test="findByLike != null">
+		      	<where>
+					<include refid="like-condition" />
+				</where>
+		    </when>
+		</choose>
+		<if test="sortName != null">
+			order by ${sortName} ${sortBy}
+		</if>
+	</sql>
+	
+	<select id="selectByMap" resultMap="result" >
+		<include refid="selectByMapSQL" />
+	</select>
+	
+	<select id="selectCount" resultType="int" >
+		select count(*) from (
+			<include refid="selectByMapSQL" />
+		) AABBCC_
+	</select>
+	
+	<select id="selectPage" resultMap="result" >
+		<include refid="selectByMapSQL" />
+		 limit #{startRow},#{pageSize}
+	</select>
+	
+	<select id="select" resultMap="result" parameterType="java.lang.Integer">
+		select
+		<include refid="base_field" />
+		from carbox  
+		<where>
+			<if test="_parameter != null">
+				id = #{id,jdbcType=INTEGER}
+			</if>
+		</where>
+	</select>
+	
+	<select id="selectByIds" resultMap="result" >
+		select
+		<include refid="base_field" />
+		from carbox  where id in (${_parameter})
+	</select>		
+
+	<insert id="insert" parameterType="com.weilai.user.account.model.Carbox" useGeneratedKeys="true" keyProperty="id">
+		insert into carbox( id,boxLength,createTime ) values (#{id,jdbcType=INTEGER},#{boxLength,jdbcType=NUMERIC},#{createTime} )
+	</insert>
+
+	<update id="update" parameterType="com.weilai.user.account.model.Carbox">
+		update carbox set boxLength=#{boxLength,jdbcType=NUMERIC}, where id=#{id,jdbcType=INTEGER}
+	</update>	
+	
+	<update id="update4Selective" parameterType="com.weilai.user.account.model.Carbox">
+		update carbox
+        <set>
+            <if test="boxLength != null "> 
+                boxLength = #{boxLength,jdbcType=NUMERIC},
+            </if>
+        </set>
+         where id=#{id,jdbcType=INTEGER}
+	</update>	
+
+	<delete id="deleteByPrimaryKey">
+		delete from carbox where id = #{id,jdbcType=INTEGER}
+	</delete>	
+
+	<delete id="delete" parameterType="com.weilai.user.account.model.Carbox">
+		delete from carbox
+		<where>
+			<if test="id != null">
+				id = #{id,jdbcType=INTEGER}
+			</if>
+			<include refid="other-condition" />
+		</where>
+	</delete>	
+		
+</mapper>
+

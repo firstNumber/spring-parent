@@ -1,0 +1,23 @@
+package ${pkgPath};
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.${companyName}.common.service.impl.BaseServiceImpl;
+import com.${companyName}.common.dao.BaseDao;
+import ${daoPath};
+import ${modelPath};
+import ${managerPath};
+
+
+@Service("${clzNameLC}Service")
+public class ${clzName}ServiceImpl extends BaseServiceImpl<${clzName}> implements ${clzName}Service{
+
+	@Autowired
+	private ${clzName}Dao ${clzNameLC}DaoImpl;
+	
+	@Override
+	public BaseDao<${clzName}> getBaseDao() {
+		return ${clzNameLC}DaoImpl;
+	}
+}

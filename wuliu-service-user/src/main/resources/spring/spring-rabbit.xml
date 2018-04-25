@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/rabbit
+    http://www.springframework.org/schema/rabbit/spring-rabbit-1.0.xsd">
+
+	<!-- 序列化方式选择json -->
+	<bean id="jsonMessageConverter"
+		class="org.springframework.amqp.support.converter.Jackson2JsonMessageConverter" />
+		
+	<rabbit:connection-factory id="connectionFactory"
+		host="${rabbit.host}" port="${rabbit.port}" username="${rabbit.username}"
+		password="${rabbit.password}" />
+
+
+	<rabbit:admin connection-factory="connectionFactory" />
+
+	<rabbit:template id="amqpTemplate" connection-factory="connectionFactory"
+		message-converter="jsonMessageConverter" />
+
+	<!-- 声明队列, 队列名称使用 模块名.业务,多个QUEUE分开写 -->
+	<rabbit:queue name="LIGE_RABBITMQ" />
+
+	<!-- 消费者监听, 将队列指定消费对象 ,如果一个队列指定多个消费对象,则会轮训 , 设置手动ack -->
+	<rabbit:listener-container
+		connection-factory="connectionFactory" acknowledge="manual">
+		<rabbit:listener queues="LIGE_RABBITMQ" ref="addOrderListener" />
+
+	</rabbit:listener-container>
+</beans>

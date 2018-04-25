@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans default-init-method="init" default-destroy-method="destroy"
+	xmlns="http://www.springframework.org/schema/beans" xmlns:task="http://www.springframework.org/schema/task"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+  		http://www.springframework.org/schema/beans/spring-beans.xsd
+  		http://www.springframework.org/schema/task
+        http://www.springframework.org/schema/task/spring-task.xsd">
+     <!-- 分布式事务配置 start -->
+     
+     <!-- 要调用的工作类 -->
+	<bean id="userTaskService" class="com.weilai.task.core.UserTaskService"></bean>
+ 
+	  <!-- 配置线程池-->
+	  <bean name="executor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+	    <property name="corePoolSize" value="15"/>
+	    <property name="maxPoolSize" value="25"/>
+	    <property name="queueCapacity" value="100"/>
+	  </bean>
+	 
+	  <!-- 配置调度任务-->
+	  <bean name="quartzScheduler"   class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+	    <property name="configLocation" value="classpath:/quartz.properties"/>
+	    <property name="dataSource" ref="dataSource"/>
+	    <property name="transactionManager" ref="transactionManager"/>
+	    <!-- 任务唯一的名称，将会持久化到数据库-->
+	    <property name="schedulerName" value="baseScheduler"/>
+	 
+	    <!-- 每台集群机器部署应用的时候会更新触发器-->
+	    <property name="overwriteExistingJobs" value="true"/>
+	    <property name="applicationContextSchedulerContextKey" value="appli"/>
+	 
+	    <property name="jobFactory">
+	      <bean class="com.weilai.task.quartz.AutowiringSpringBeanJobFactory"/>
+	    </property>
+	 
+	    <property name="triggers">
+	      <list>
+	        <ref bean="pushUserTrigger"/>
+	      
+	      </list>
+	    </property>
+	 
+	    <property name="taskExecutor" ref="executor"/>
+	 
+	  </bean>
+	  <!-- 分布式事务配置 end -->
+	  
+	  
+	  <!-- 骑士确认送达，推送结算失败后，重新推送(待结算订单) -->
+	  <!-- 配置触发时间 -->
+	   <bean name="pushUserTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+	    <property name="jobDetail" ref="pushUserJobs"/>
+	    <property name="cronExpression">
+	      <value>*/5 * * * * ?</value>
+	    </property>
+	  </bean>
+	  <!-- 配置Job详情 -->
+	  <bean name="pushUserJobs" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
+	    <property name="jobClass" value="com.weilai.task.quartz.DistributedTask"/>
+	    <property name="durability" value="true"/>
+	    <property name="requestsRecovery" value="false"/>
+	    <property name="jobDataAsMap"> 
+			<map>
+				<entry key="targetObject" value="userTaskService" />
+				<entry key="targetMethod" value="pushUser" />
+			</map>
+		</property>
+	  </bean>
+ 
+</beans>

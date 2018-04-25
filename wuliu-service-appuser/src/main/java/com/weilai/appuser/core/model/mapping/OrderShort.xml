@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.weilai.appuser.core.model.OrderShort">
+
+	<resultMap id="result" type="com.weilai.appuser.core.model.OrderShort">
+            <id property="id" column="id" jdbcType="INTEGER" />
+            <result property="globalOrderNum" column="globalOrderNum" jdbcType="VARCHAR" />
+            <result property="moduleType" column="moduleType" jdbcType="VARCHAR" />
+            <result property="orderType" column="orderType" jdbcType="NUMERIC" />
+            <result property="reverseStatus" column="reverseStatus" jdbcType="NUMERIC" />
+            <result property="positiveGlobalOrderNum" column="positiveGlobalOrderNum" jdbcType="VARCHAR" />
+            <result property="batchNum" column="batchNum" jdbcType="VARCHAR" />
+            <result property="packageNum" column="packageNum" jdbcType="VARCHAR" />
+            <result property="packageType" column="packageType" jdbcType="NUMERIC" />
+            <result property="status" column="status" jdbcType="NUMERIC" />
+            <result property="goodsStatus" column="goodsStatus" jdbcType="NUMERIC" />
+            <result property="storageNo" column="storageNo" jdbcType="VARCHAR" />
+            <result property="createTime" column="createTime" />
+            <result property="driverId" column="driverId" jdbcType="NUMERIC" />
+            <result property="driverPhone" column="driverPhone" jdbcType="VARCHAR" />
+            <result property="driverName" column="driverName" jdbcType="VARCHAR" />
+            <result property="agentNo" column="agentNo" jdbcType="VARCHAR" />
+            <result property="shipperCode" column="shipperCode" jdbcType="VARCHAR" />
+            <result property="vehicleLicenseNum" column="vehicleLicenseNum" jdbcType="VARCHAR" />
+            <result property="sender" column="sender" jdbcType="VARCHAR" />
+            <result property="senderPhone" column="senderPhone" jdbcType="VARCHAR" />
+            <result property="sendProvince" column="sendProvince" jdbcType="VARCHAR" />
+            <result property="sendCity" column="sendCity" jdbcType="VARCHAR" />
+            <result property="sendArea" column="sendArea" jdbcType="VARCHAR" />
+            <result property="sendDigest" column="sendDigest" jdbcType="VARCHAR" />
+            <result property="sendAdd" column="sendAdd" jdbcType="VARCHAR" />
+            <result property="sendLongitude" column="sendLongitude" jdbcType="NUMERIC" />
+            <result property="sendLatitude" column="sendLatitude" jdbcType="NUMERIC" />
+            <result property="receiver" column="receiver" jdbcType="VARCHAR" />
+            <result property="receiverPhone" column="receiverPhone" jdbcType="VARCHAR" />
+            <result property="receiveProvince" column="receiveProvince" jdbcType="VARCHAR" />
+            <result property="receiveCity" column="receiveCity" jdbcType="VARCHAR" />
+            <result property="receiveArea" column="receiveArea" jdbcType="VARCHAR" />
+            <result property="receiveDigest" column="receiveDigest" jdbcType="VARCHAR" />
+            <result property="receiveAdd" column="receiveAdd" jdbcType="VARCHAR" />
+            <result property="receiveLongitude" column="receiveLongitude" jdbcType="NUMERIC" />
+            <result property="receiveLatitude" column="receiveLatitude" jdbcType="NUMERIC" />
+            <result property="disreceDistance" column="disreceDistance" jdbcType="NUMERIC" />
+            <result property="orderNum" column="orderNum" jdbcType="VARCHAR" />
+            <result property="dkhCode" column="dkhCode" jdbcType="VARCHAR" />
+            <result property="origin" column="origin" jdbcType="VARCHAR" />
+            <result property="amount" column="amount" jdbcType="NUMERIC" />
+            <result property="damagedAmount" column="damagedAmount" jdbcType="NUMERIC" />
+            <result property="finalPrice" column="finalPrice" jdbcType="NUMERIC" />
+            <result property="remark" column="remark" jdbcType="VARCHAR" />
+            <result property="memo" column="memo" jdbcType="VARCHAR" />
+            <result property="overTime" column="overTime" />
+            <result property="waitSettlementTime" column="waitSettlementTime" />
+            <result property="settlementTime" column="settlementTime" />
+            <result property="updateTime" column="updateTime" />
+            <result property="goodsLength" column="goodsLength" jdbcType="NUMERIC" />
+            <result property="goodsWidth" column="goodsWidth" jdbcType="NUMERIC" />
+            <result property="goodsHeight" column="goodsHeight" jdbcType="NUMERIC" />
+            <result property="goodsTotalWeight" column="goodsTotalWeight" jdbcType="NUMERIC" />
+            <result property="cargoName" column="cargoName" jdbcType="VARCHAR" />
+            <result property="deliveryType" column="deliveryType" jdbcType="VARCHAR" />
+            <result property="deliveryLongitude" column="deliveryLongitude" jdbcType="NUMERIC" />
+            <result property="deliveryLatitude" column="deliveryLatitude" jdbcType="NUMERIC" />
+            <result property="takeOrderTime" column="takeOrderTime" />
+            <result property="takeGoodsTime" column="takeGoodsTime" />
+            <result property="payTime" column="payTime" />
+            <result property="globalnodePrice" column="globalnodePrice" jdbcType="NUMERIC" />
+            <result property="confirmReceiptTime" column="confirmReceiptTime" />
+            <result property="packageTime" column="packageTime" />
+            <result property="robPoolTime" column="robPoolTime" />
+            <result property="goodsTotalVolume" column="goodsTotalVolume" jdbcType="NUMERIC" />
+            <result property="effThird" column="effThird" jdbcType="NUMERIC" />
+            <result property="effRecp" column="effRecp" jdbcType="NUMERIC" />
+
+	</resultMap>
+
+	<sql id="base_field">
+        id,globalOrderNum,moduleType,orderType,reverseStatus,positiveGlobalOrderNum,batchNum,packageNum,packageType,status,goodsStatus,storageNo,createTime,driverId,driverPhone,driverName,agentNo,shipperCode,vehicleLicenseNum,sender,senderPhone,sendProvince,sendCity,sendArea,sendDigest,sendAdd,sendLongitude,sendLatitude,receiver,receiverPhone,receiveProvince,receiveCity,receiveArea,receiveDigest,receiveAdd,receiveLongitude,receiveLatitude,disreceDistance,orderNum,dkhCode,origin,amount,damagedAmount,finalPrice,remark,memo,overTime,waitSettlementTime,settlementTime,updateTime,goodsLength,goodsWidth,goodsHeight,goodsTotalWeight,cargoName,deliveryType,deliveryLongitude,deliveryLatitude,takeOrderTime,takeGoodsTime,payTime,globalnodePrice,confirmReceiptTime,packageTime,robPoolTime,goodsTotalVolume,effThird,effRecp
+	</sql>
+	
+	<sql id="other-condition">
+            <if test= "globalOrderNum != null ">	and globalOrderNum = #{globalOrderNum,jdbcType=VARCHAR }</if>
+            <if test= "moduleType != null ">	and moduleType = #{moduleType,jdbcType=VARCHAR }</if>
+            <if test= "orderType != null ">	and orderType = #{orderType,jdbcType=NUMERIC }</if>
+            <if test= "reverseStatus != null ">	and reverseStatus = #{reverseStatus,jdbcType=NUMERIC }</if>
+            <if test= "positiveGlobalOrderNum != null ">	and positiveGlobalOrderNum = #{positiveGlobalOrderNum,jdbcType=VARCHAR }</if>
+            <if test= "batchNum != null ">	and batchNum = #{batchNum,jdbcType=VARCHAR }</if>
+            <if test= "packageNum != null ">	and packageNum = #{packageNum,jdbcType=VARCHAR }</if>
+            <if test= "packageType != null ">	and packageType = #{packageType,jdbcType=NUMERIC }</if>
+            <if test= "status != null ">	and status = #{status,jdbcType=NUMERIC }</if>
+            <if test= "statusIn != null ">	and status in (${statusIn})</if>
+            <if test= "goodsStatus != null ">	and goodsStatus = #{goodsStatus,jdbcType=NUMERIC }</if>
+            <if test= "storageNo != null ">	and storageNo = #{storageNo,jdbcType=VARCHAR }</if>
+            <if test= "createTime != null ">	and createTime = #{createTime }</if>
+            <if test= "driverId != null ">	and driverId = #{driverId,jdbcType=NUMERIC }</if>
+            <if test= "driverPhone != null ">	and driverPhone = #{driverPhone,jdbcType=VARCHAR }</if>
+            <if test= "driverName != null ">	and driverName = #{driverName,jdbcType=VARCHAR }</if>
+            <if test= "agentNo != null ">	and agentNo = #{agentNo,jdbcType=VARCHAR }</if>
+            <if test= "shipperCode != null ">	and shipperCode = #{shipperCode,jdbcType=VARCHAR }</if>
+            <if test= "vehicleLicenseNum != null ">	and vehicleLicenseNum = #{vehicleLicenseNum,jdbcType=VARCHAR }</if>
+            <if test= "sender != null ">	and sender = #{sender,jdbcType=VARCHAR }</if>
+            <if test= "senderPhone != null ">	and senderPhone = #{senderPhone,jdbcType=VARCHAR }</if>
+            <if test= "sendProvince != null ">	and sendProvince = #{sendProvince,jdbcType=VARCHAR }</if>
+            <if test= "sendCity != null ">	and sendCity = #{sendCity,jdbcType=VARCHAR }</if>
+            <if test= "sendArea != null ">	and sendArea = #{sendArea,jdbcType=VARCHAR }</if>
+            <if test= "sendDigest != null ">	and sendDigest = #{sendDigest,jdbcType=VARCHAR }</if>
+            <if test= "sendAdd != null ">	and sendAdd = #{sendAdd,jdbcType=VARCHAR }</if>
+            <if test= "sendLongitude != null ">	and sendLongitude = #{sendLongitude,jdbcType=NUMERIC }</if>
+            <if test= "sendLatitude != null ">	and sendLatitude = #{sendLatitude,jdbcType=NUMERIC }</if>
+            <if test= "receiver != null ">	and receiver = #{receiver,jdbcType=VARCHAR }</if>
+            <if test= "receiverPhone != null ">	and receiverPhone = #{receiverPhone,jdbcType=VARCHAR }</if>
+            <if test= "receiveProvince != null ">	and receiveProvince = #{receiveProvince,jdbcType=VARCHAR }</if>
+            <if test= "receiveCity != null ">	and receiveCity = #{receiveCity,jdbcType=VARCHAR }</if>
+            <if test= "receiveArea != null ">	and receiveArea = #{receiveArea,jdbcType=VARCHAR }</if>
+            <if test= "receiveDigest != null ">	and receiveDigest = #{receiveDigest,jdbcType=VARCHAR }</if>
+            <if test= "receiveAdd != null ">	and receiveAdd = #{receiveAdd,jdbcType=VARCHAR }</if>
+            <if test= "receiveLongitude != null ">	and receiveLongitude = #{receiveLongitude,jdbcType=NUMERIC }</if>
+            <if test= "receiveLatitude != null ">	and receiveLatitude = #{receiveLatitude,jdbcType=NUMERIC }</if>
+            <if test= "disreceDistance != null ">	and disreceDistance = #{disreceDistance,jdbcType=NUMERIC }</if>
+            <if test= "orderNum != null ">	and orderNum = #{orderNum,jdbcType=VARCHAR }</if>
+            <if test= "dkhCode != null ">	and dkhCode = #{dkhCode,jdbcType=VARCHAR }</if>
+            <if test= "origin != null ">	and origin = #{origin,jdbcType=VARCHAR }</if>
+            <if test= "amount != null ">	and amount = #{amount,jdbcType=NUMERIC }</if>
+            <if test= "damagedAmount != null ">	and damagedAmount = #{damagedAmount,jdbcType=NUMERIC }</if>
+            <if test= "finalPrice != null ">	and finalPrice = #{finalPrice,jdbcType=NUMERIC }</if>
+            <if test= "remark != null ">	and remark = #{remark,jdbcType=VARCHAR }</if>
+            <if test= "memo != null ">	and memo = #{memo,jdbcType=VARCHAR }</if>
+            <if test= "overTime != null ">	and overTime = #{overTime }</if>
+            <if test= "waitSettlementTime != null ">	and waitSettlementTime = #{waitSettlementTime }</if>
+            <if test= "settlementTime != null ">	and settlementTime = #{settlementTime }</if>
+            <if test= "updateTime != null ">	and updateTime = #{updateTime }</if>
+            <if test= "goodsLength != null ">	and goodsLength = #{goodsLength,jdbcType=NUMERIC }</if>
+            <if test= "goodsWidth != null ">	and goodsWidth = #{goodsWidth,jdbcType=NUMERIC }</if>
+            <if test= "goodsHeight != null ">	and goodsHeight = #{goodsHeight,jdbcType=NUMERIC }</if>
+            <if test= "goodsTotalWeight != null ">	and goodsTotalWeight = #{goodsTotalWeight,jdbcType=NUMERIC }</if>
+            <if test= "cargoName != null ">	and cargoName = #{cargoName,jdbcType=VARCHAR }</if>
+            <if test= "deliveryType != null ">	and deliveryType = #{deliveryType,jdbcType=VARCHAR }</if>
+            <if test= "deliveryLongitude != null ">	and deliveryLongitude = #{deliveryLongitude,jdbcType=NUMERIC }</if>
+            <if test= "deliveryLatitude != null ">	and deliveryLatitude = #{deliveryLatitude,jdbcType=NUMERIC }</if>
+            <if test= "takeOrderTime != null ">	and takeOrderTime = #{takeOrderTime }</if>
+            <if test= "takeGoodsTime != null ">	and takeGoodsTime = #{takeGoodsTime }</if>
+            <if test= "payTime != null ">	and payTime = #{payTime }</if>
+            <if test= "globalnodePrice != null ">	and globalnodePrice = #{globalnodePrice,jdbcType=NUMERIC }</if>
+            <if test= "confirmReceiptTime != null ">	and confirmReceiptTime = #{confirmReceiptTime }</if>
+            <if test= "packageTime != null ">	and packageTime = #{packageTime }</if>
+            <if test= "robPoolTime != null ">	and robPoolTime = #{robPoolTime }</if>
+            <if test= "goodsTotalVolume != null ">	and goodsTotalVolume = #{goodsTotalVolume,jdbcType=NUMERIC }</if>
+            <if test= "effThird != null ">	and effThird = #{effThird,jdbcType=NUMERIC }</if>
+            <if test= "effRecp != null ">	and effRecp = #{effRecp,jdbcType=NUMERIC }</if>
+
+ 	</sql>
+ 	
+ 	<sql id="like-condition">
+            <if test= "globalOrderNum != null ">	and globalOrderNum like "%"#{globalOrderNum}"%"</if>
+            <if test= "moduleType != null ">	and moduleType like "%"#{moduleType}"%"</if>
+            <if test= "orderType != null ">	and orderType = #{orderType,jdbcType=NUMERIC }</if>
+            <if test= "reverseStatus != null ">	and reverseStatus = #{reverseStatus,jdbcType=NUMERIC }</if>
+            <if test= "positiveGlobalOrderNum != null ">	and positiveGlobalOrderNum like "%"#{positiveGlobalOrderNum}"%"</if>
+            <if test= "batchNum != null ">	and batchNum like "%"#{batchNum}"%"</if>
+            <if test= "packageNum != null ">	and packageNum like "%"#{packageNum}"%"</if>
+            <if test= "packageType != null ">	and packageType = #{packageType,jdbcType=NUMERIC }</if>
+            <if test= "status != null ">	and status = #{status,jdbcType=NUMERIC }</if>
+            <if test= "statusIn != null ">	and status in (${statusIn})</if>
+            <if test= "goodsStatus != null ">	and goodsStatus = #{goodsStatus,jdbcType=NUMERIC }</if>
+            <if test= "storageNo != null ">	and storageNo like "%"#{storageNo}"%"</if>
+            <if test= "createTime != null ">	and createTime = #{createTime }</if>
+            <if test= "driverId != null ">	and driverId = #{driverId,jdbcType=NUMERIC }</if>
+            <if test= "driverPhone != null ">	and driverPhone like "%"#{driverPhone}"%"</if>
+            <if test= "driverName != null ">	and driverName like "%"#{driverName}"%"</if>
+            <if test= "agentNo != null ">	and agentNo like "%"#{agentNo}"%"</if>
+            <if test= "shipperCode != null ">	and shipperCode like "%"#{shipperCode}"%"</if>
+            <if test= "vehicleLicenseNum != null ">	and vehicleLicenseNum like "%"#{vehicleLicenseNum}"%"</if>
+            <if test= "sender != null ">	and sender like "%"#{sender}"%"</if>
+            <if test= "senderPhone != null ">	and senderPhone like "%"#{senderPhone}"%"</if>
+            <if test= "sendProvince != null ">	and sendProvince like "%"#{sendProvince}"%"</if>
+            <if test= "sendCity != null ">	and sendCity like "%"#{sendCity}"%"</if>
+            <if test= "sendArea != null ">	and sendArea like "%"#{sendArea}"%"</if>
+            <if test= "sendDigest != null ">	and sendDigest like "%"#{sendDigest}"%"</if>
+            <if test= "sendAdd != null ">	and sendAdd like "%"#{sendAdd}"%"</if>
+            <if test= "sendLongitude != null ">	and sendLongitude = #{sendLongitude,jdbcType=NUMERIC }</if>
+            <if test= "sendLatitude != null ">	and sendLatitude = #{sendLatitude,jdbcType=NUMERIC }</if>
+            <if test= "receiver != null ">	and receiver like "%"#{receiver}"%"</if>
+            <if test= "receiverPhone != null ">	and receiverPhone like "%"#{receiverPhone}"%"</if>
+            <if test= "receiveProvince != null ">	and receiveProvince like "%"#{receiveProvince}"%"</if>
+            <if test= "receiveCity != null ">	and receiveCity like "%"#{receiveCity}"%"</if>
+            <if test= "receiveArea != null ">	and receiveArea like "%"#{receiveArea}"%"</if>
+            <if test= "receiveDigest != null ">	and receiveDigest like "%"#{receiveDigest}"%"</if>
+            <if test= "receiveAdd != null ">	and receiveAdd like "%"#{receiveAdd}"%"</if>
+            <if test= "receiveLongitude != null ">	and receiveLongitude = #{receiveLongitude,jdbcType=NUMERIC }</if>
+            <if test= "receiveLatitude != null ">	and receiveLatitude = #{receiveLatitude,jdbcType=NUMERIC }</if>
+            <if test= "disreceDistance != null ">	and disreceDistance = #{disreceDistance,jdbcType=NUMERIC }</if>
+            <if test= "orderNum != null ">	and orderNum like "%"#{orderNum}"%"</if>
+            <if test= "dkhCode != null ">	and dkhCode like "%"#{dkhCode}"%"</if>
+            <if test= "origin != null ">	and origin like "%"#{origin}"%"</if>
+            <if test= "amount != null ">	and amount = #{amount,jdbcType=NUMERIC }</if>
+            <if test= "damagedAmount != null ">	and damagedAmount = #{damagedAmount,jdbcType=NUMERIC }</if>
+            <if test= "finalPrice != null ">	and finalPrice = #{finalPrice,jdbcType=NUMERIC }</if>
+            <if test= "remark != null ">	and remark like "%"#{remark}"%"</if>
+            <if test= "memo != null ">	and memo like "%"#{memo}"%"</if>
+            <if test= "overTime != null ">	and overTime = #{overTime }</if>
+            <if test= "waitSettlementTime != null ">	and waitSettlementTime = #{waitSettlementTime }</if>
+            <if test= "settlementTime != null ">	and settlementTime = #{settlementTime }</if>
+            <if test= "updateTime != null ">	and updateTime = #{updateTime }</if>
+            <if test= "goodsLength != null ">	and goodsLength = #{goodsLength,jdbcType=NUMERIC }</if>
+            <if test= "goodsWidth != null ">	and goodsWidth = #{goodsWidth,jdbcType=NUMERIC }</if>
+            <if test= "goodsHeight != null ">	and goodsHeight = #{goodsHeight,jdbcType=NUMERIC }</if>
+            <if test= "goodsTotalWeight != null ">	and goodsTotalWeight = #{goodsTotalWeight,jdbcType=NUMERIC }</if>
+            <if test= "cargoName != null ">	and cargoName like "%"#{cargoName}"%"</if>
+            <if test= "deliveryType != null ">	and deliveryType like "%"#{deliveryType}"%"</if>
+            <if test= "deliveryLongitude != null ">	and deliveryLongitude = #{deliveryLongitude,jdbcType=NUMERIC }</if>
+            <if test= "deliveryLatitude != null ">	and deliveryLatitude = #{deliveryLatitude,jdbcType=NUMERIC }</if>
+            <if test= "takeOrderTime != null ">	and takeOrderTime = #{takeOrderTime }</if>
+            <if test= "takeGoodsTime != null ">	and takeGoodsTime = #{takeGoodsTime }</if>
+            <if test= "payTime != null ">	and payTime = #{payTime }</if>
+            <if test= "globalnodePrice != null ">	and globalnodePrice = #{globalnodePrice,jdbcType=NUMERIC }</if>
+            <if test= "confirmReceiptTime != null ">	and confirmReceiptTime = #{confirmReceiptTime }</if>
+            <if test= "packageTime != null ">	and packageTime = #{packageTime }</if>
+            <if test= "robPoolTime != null ">	and robPoolTime = #{robPoolTime }</if>
+            <if test= "goodsTotalVolume != null ">	and goodsTotalVolume = #{goodsTotalVolume,jdbcType=NUMERIC }</if>
+            <if test= "effThird != null ">	and effThird = #{effThird,jdbcType=NUMERIC }</if>
+            <if test= "effRecp != null ">	and effRecp = #{effRecp,jdbcType=NUMERIC }</if>
+
+ 	</sql>
+	
+	<sql id="selectByMapSQL">
+		select
+		<include refid="base_field" />
+		from order_short
+		<choose>
+		    <when test="findBy != null">
+		      	<where>
+					<include refid="other-condition" />
+				</where>
+		    </when>
+		    <when test="findByLike != null">
+		      	<where>
+					<include refid="like-condition" />
+				</where>
+		    </when>
+		</choose>
+		<if test="sortName != null">
+			order by ${sortName} ${sortBy}
+		</if>
+	</sql>
+	
+	<select id="selectByMap" resultMap="result" >
+		<include refid="selectByMapSQL" />
+	</select>
+	
+	<select id="selectCount" resultType="int" >
+		select count(*) from (
+			<include refid="selectByMapSQL" />
+		) AABBCC_
+	</select>
+	
+	<select id="selectPage" resultMap="result" >
+		<include refid="selectByMapSQL" />
+		 limit #{startRow},#{pageSize}
+	</select>
+	
+	<select id="select" resultMap="result" parameterType="java.lang.Integer">
+		select
+		<include refid="base_field" />
+		from order_short  
+		<where>
+			<if test="_parameter != null">
+				id = #{id,jdbcType=INTEGER}
+			</if>
+		</where>
+	</select>
+	
+	<select id="selectByIds" resultMap="result" >
+		select
+		<include refid="base_field" />
+		from order_short  where id in (${_parameter})
+	</select>		
+
+	<insert id="insert" parameterType="com.weilai.appuser.core.model.OrderShort" useGeneratedKeys="true" keyProperty="id">
+        insert into order_short( id,globalOrderNum,moduleType,orderType,reverseStatus,positiveGlobalOrderNum,batchNum,packageNum,packageType,status,goodsStatus,storageNo,createTime,driverId,driverPhone,driverName,agentNo,shipperCode,vehicleLicenseNum,sender,senderPhone,sendProvince,sendCity,sendArea,sendDigest,sendAdd,sendLongitude,sendLatitude,receiver,receiverPhone,receiveProvince,receiveCity,receiveArea,receiveDigest,receiveAdd,receiveLongitude,receiveLatitude,disreceDistance,orderNum,dkhCode,origin,amount,damagedAmount,finalPrice,remark,memo,overTime,waitSettlementTime,settlementTime,updateTime,goodsLength,goodsWidth,goodsHeight,goodsTotalWeight,cargoName,deliveryType,deliveryLongitude,deliveryLatitude,takeOrderTime,takeGoodsTime,payTime,globalnodePrice,confirmReceiptTime,packageTime,robPoolTime,goodsTotalVolume,effThird,effRecp ) values (#{id,jdbcType=INTEGER},#{globalOrderNum,jdbcType=VARCHAR},#{moduleType,jdbcType=VARCHAR},#{orderType,jdbcType=NUMERIC},#{reverseStatus,jdbcType=NUMERIC},#{positiveGlobalOrderNum,jdbcType=VARCHAR},#{batchNum,jdbcType=VARCHAR},#{packageNum,jdbcType=VARCHAR},#{packageType,jdbcType=NUMERIC},#{status,jdbcType=NUMERIC},#{goodsStatus,jdbcType=NUMERIC},#{storageNo,jdbcType=VARCHAR},#{createTime},#{driverId,jdbcType=NUMERIC},#{driverPhone,jdbcType=VARCHAR},#{driverName,jdbcType=VARCHAR},#{agentNo,jdbcType=VARCHAR},#{shipperCode,jdbcType=VARCHAR},#{vehicleLicenseNum,jdbcType=VARCHAR},#{sender,jdbcType=VARCHAR},#{senderPhone,jdbcType=VARCHAR},#{sendProvince,jdbcType=VARCHAR},#{sendCity,jdbcType=VARCHAR},#{sendArea,jdbcType=VARCHAR},#{sendDigest,jdbcType=VARCHAR},#{sendAdd,jdbcType=VARCHAR},#{sendLongitude,jdbcType=NUMERIC},#{sendLatitude,jdbcType=NUMERIC},#{receiver,jdbcType=VARCHAR},#{receiverPhone,jdbcType=VARCHAR},#{receiveProvince,jdbcType=VARCHAR},#{receiveCity,jdbcType=VARCHAR},#{receiveArea,jdbcType=VARCHAR},#{receiveDigest,jdbcType=VARCHAR},#{receiveAdd,jdbcType=VARCHAR},#{receiveLongitude,jdbcType=NUMERIC},#{receiveLatitude,jdbcType=NUMERIC},#{disreceDistance,jdbcType=NUMERIC},#{orderNum,jdbcType=VARCHAR},#{dkhCode,jdbcType=VARCHAR},#{origin,jdbcType=VARCHAR},#{amount,jdbcType=NUMERIC},#{damagedAmount,jdbcType=NUMERIC},#{finalPrice,jdbcType=NUMERIC},#{remark,jdbcType=VARCHAR},#{memo,jdbcType=VARCHAR},#{overTime},#{waitSettlementTime},#{settlementTime},#{updateTime},#{goodsLength,jdbcType=NUMERIC},#{goodsWidth,jdbcType=NUMERIC},#{goodsHeight,jdbcType=NUMERIC},#{goodsTotalWeight,jdbcType=NUMERIC},#{cargoName,jdbcType=VARCHAR},#{deliveryType,jdbcType=VARCHAR},#{deliveryLongitude,jdbcType=NUMERIC},#{deliveryLatitude,jdbcType=NUMERIC},#{takeOrderTime},#{takeGoodsTime},#{payTime},#{globalnodePrice,jdbcType=NUMERIC},#{confirmReceiptTime},#{packageTime},#{robPoolTime},#{goodsTotalVolume,jdbcType=NUMERIC},#{effThird,jdbcType=NUMERIC},#{effRecp,jdbcType=NUMERIC} )
+	</insert>
+
+	<update id="update" parameterType="com.weilai.appuser.core.model.OrderShort">
+        update order_short set globalOrderNum=#{globalOrderNum,jdbcType=VARCHAR},moduleType=#{moduleType,jdbcType=VARCHAR},orderType=#{orderType,jdbcType=NUMERIC},reverseStatus=#{reverseStatus,jdbcType=NUMERIC},positiveGlobalOrderNum=#{positiveGlobalOrderNum,jdbcType=VARCHAR},batchNum=#{batchNum,jdbcType=VARCHAR},packageNum=#{packageNum,jdbcType=VARCHAR},packageType=#{packageType,jdbcType=NUMERIC},status=#{status,jdbcType=NUMERIC},goodsStatus=#{goodsStatus,jdbcType=NUMERIC},storageNo=#{storageNo,jdbcType=VARCHAR},driverId=#{driverId,jdbcType=NUMERIC},driverPhone=#{driverPhone,jdbcType=VARCHAR},driverName=#{driverName,jdbcType=VARCHAR},agentNo=#{agentNo,jdbcType=VARCHAR},shipperCode=#{shipperCode,jdbcType=VARCHAR},vehicleLicenseNum=#{vehicleLicenseNum,jdbcType=VARCHAR},sender=#{sender,jdbcType=VARCHAR},senderPhone=#{senderPhone,jdbcType=VARCHAR},sendProvince=#{sendProvince,jdbcType=VARCHAR},sendCity=#{sendCity,jdbcType=VARCHAR},sendArea=#{sendArea,jdbcType=VARCHAR},sendDigest=#{sendDigest,jdbcType=VARCHAR},sendAdd=#{sendAdd,jdbcType=VARCHAR},sendLongitude=#{sendLongitude,jdbcType=NUMERIC},sendLatitude=#{sendLatitude,jdbcType=NUMERIC},receiver=#{receiver,jdbcType=VARCHAR},receiverPhone=#{receiverPhone,jdbcType=VARCHAR},receiveProvince=#{receiveProvince,jdbcType=VARCHAR},receiveCity=#{receiveCity,jdbcType=VARCHAR},receiveArea=#{receiveArea,jdbcType=VARCHAR},receiveDigest=#{receiveDigest,jdbcType=VARCHAR},receiveAdd=#{receiveAdd,jdbcType=VARCHAR},receiveLongitude=#{receiveLongitude,jdbcType=NUMERIC},receiveLatitude=#{receiveLatitude,jdbcType=NUMERIC},disreceDistance=#{disreceDistance,jdbcType=NUMERIC},orderNum=#{orderNum,jdbcType=VARCHAR},dkhCode=#{dkhCode,jdbcType=VARCHAR},origin=#{origin,jdbcType=VARCHAR},amount=#{amount,jdbcType=NUMERIC},damagedAmount=#{damagedAmount,jdbcType=NUMERIC},finalPrice=#{finalPrice,jdbcType=NUMERIC},remark=#{remark,jdbcType=VARCHAR},memo=#{memo,jdbcType=VARCHAR},overTime=#{overTime},waitSettlementTime=#{waitSettlementTime},settlementTime=#{settlementTime},updateTime=#{updateTime},goodsLength=#{goodsLength,jdbcType=NUMERIC},goodsWidth=#{goodsWidth,jdbcType=NUMERIC},goodsHeight=#{goodsHeight,jdbcType=NUMERIC},goodsTotalWeight=#{goodsTotalWeight,jdbcType=NUMERIC},cargoName=#{cargoName,jdbcType=VARCHAR},deliveryType=#{deliveryType,jdbcType=VARCHAR},deliveryLongitude=#{deliveryLongitude,jdbcType=NUMERIC},deliveryLatitude=#{deliveryLatitude,jdbcType=NUMERIC},takeOrderTime=#{takeOrderTime},takeGoodsTime=#{takeGoodsTime},payTime=#{payTime},globalnodePrice=#{globalnodePrice,jdbcType=NUMERIC},confirmReceiptTime=#{confirmReceiptTime},packageTime=#{packageTime},robPoolTime=#{robPoolTime},goodsTotalVolume=#{goodsTotalVolume,jdbcType=NUMERIC},effThird=#{effThird,jdbcType=NUMERIC},effRecp=#{effRecp,jdbcType=NUMERIC} where id=#{id,jdbcType=INTEGER}
+	</update>	
+	
+	<update id="update4Selective" parameterType="com.weilai.appuser.core.model.OrderShort">
+        update order_short
+        <set>
+            <if test="globalOrderNum != null "> 
+                globalOrderNum = #{globalOrderNum,jdbcType=VARCHAR},
+            </if>
+            <if test="moduleType != null "> 
+                moduleType = #{moduleType,jdbcType=VARCHAR},
+            </if>
+            <if test="orderType != null "> 
+                orderType = #{orderType,jdbcType=NUMERIC},
+            </if>
+            <if test="reverseStatus != null "> 
+                reverseStatus = #{reverseStatus,jdbcType=NUMERIC},
+            </if>
+            <if test="positiveGlobalOrderNum != null "> 
+                positiveGlobalOrderNum = #{positiveGlobalOrderNum,jdbcType=VARCHAR},
+            </if>
+            <if test="batchNum != null "> 
+                batchNum = #{batchNum,jdbcType=VARCHAR},
+            </if>
+            <if test="packageNum != null "> 
+                packageNum = #{packageNum,jdbcType=VARCHAR},
+            </if>
+            <if test="packageType != null "> 
+                packageType = #{packageType,jdbcType=NUMERIC},
+            </if>
+            <if test="status != null "> 
+                status = #{status,jdbcType=NUMERIC},
+            </if>
+            <if test="goodsStatus != null "> 
+                goodsStatus = #{goodsStatus,jdbcType=NUMERIC},
+            </if>
+            <if test="storageNo != null "> 
+                storageNo = #{storageNo,jdbcType=VARCHAR},
+            </if>
+            <if test="driverId != null "> 
+                driverId = #{driverId,jdbcType=NUMERIC},
+            </if>
+            <if test="driverPhone != null "> 
+                driverPhone = #{driverPhone,jdbcType=VARCHAR},
+            </if>
+            <if test="driverName != null "> 
+                driverName = #{driverName,jdbcType=VARCHAR},
+            </if>
+            <if test="agentNo != null "> 
+                agentNo = #{agentNo,jdbcType=VARCHAR},
+            </if>
+            <if test="shipperCode != null "> 
+                shipperCode = #{shipperCode,jdbcType=VARCHAR},
+            </if>
+            <if test="vehicleLicenseNum != null "> 
+                vehicleLicenseNum = #{vehicleLicenseNum,jdbcType=VARCHAR},
+            </if>
+            <if test="sender != null "> 
+                sender = #{sender,jdbcType=VARCHAR},
+            </if>
+            <if test="senderPhone != null "> 
+                senderPhone = #{senderPhone,jdbcType=VARCHAR},
+            </if>
+            <if test="sendProvince != null "> 
+                sendProvince = #{sendProvince,jdbcType=VARCHAR},
+            </if>
+            <if test="sendCity != null "> 
+                sendCity = #{sendCity,jdbcType=VARCHAR},
+            </if>
+            <if test="sendArea != null "> 
+                sendArea = #{sendArea,jdbcType=VARCHAR},
+            </if>
+            <if test="sendDigest != null "> 
+                sendDigest = #{sendDigest,jdbcType=VARCHAR},
+            </if>
+            <if test="sendAdd != null "> 
+                sendAdd = #{sendAdd,jdbcType=VARCHAR},
+            </if>
+            <if test="sendLongitude != null "> 
+                sendLongitude = #{sendLongitude,jdbcType=NUMERIC},
+            </if>
+            <if test="sendLatitude != null "> 
+                sendLatitude = #{sendLatitude,jdbcType=NUMERIC},
+            </if>
+            <if test="receiver != null "> 
+                receiver = #{receiver,jdbcType=VARCHAR},
+            </if>
+            <if test="receiverPhone != null "> 
+                receiverPhone = #{receiverPhone,jdbcType=VARCHAR},
+            </if>
+            <if test="receiveProvince != null "> 
+                receiveProvince = #{receiveProvince,jdbcType=VARCHAR},
+            </if>
+            <if test="receiveCity != null "> 
+                receiveCity = #{receiveCity,jdbcType=VARCHAR},
+            </if>
+            <if test="receiveArea != null "> 
+                receiveArea = #{receiveArea,jdbcType=VARCHAR},
+            </if>
+            <if test="receiveDigest != null "> 
+                receiveDigest = #{receiveDigest,jdbcType=VARCHAR},
+            </if>
+            <if test="receiveAdd != null "> 
+                receiveAdd = #{receiveAdd,jdbcType=VARCHAR},
+            </if>
+            <if test="receiveLongitude != null "> 
+                receiveLongitude = #{receiveLongitude,jdbcType=NUMERIC},
+            </if>
+            <if test="receiveLatitude != null "> 
+                receiveLatitude = #{receiveLatitude,jdbcType=NUMERIC},
+            </if>
+            <if test="disreceDistance != null "> 
+                disreceDistance = #{disreceDistance,jdbcType=NUMERIC},
+            </if>
+            <if test="orderNum != null "> 
+                orderNum = #{orderNum,jdbcType=VARCHAR},
+            </if>
+            <if test="dkhCode != null "> 
+                dkhCode = #{dkhCode,jdbcType=VARCHAR},
+            </if>
+            <if test="origin != null "> 
+                origin = #{origin,jdbcType=VARCHAR},
+            </if>
+            <if test="amount != null "> 
+                amount = #{amount,jdbcType=NUMERIC},
+            </if>
+            <if test="damagedAmount != null "> 
+                damagedAmount = #{damagedAmount,jdbcType=NUMERIC},
+            </if>
+            <if test="finalPrice != null "> 
+                finalPrice = #{finalPrice,jdbcType=NUMERIC},
+            </if>
+            <if test="remark != null "> 
+                remark = #{remark,jdbcType=VARCHAR},
+            </if>
+            <if test="memo != null "> 
+                memo = #{memo,jdbcType=VARCHAR},
+            </if>
+            <if test="overTime != null "> 
+                overTime = #{overTime},
+            </if>
+            <if test="waitSettlementTime != null "> 
+                waitSettlementTime = #{waitSettlementTime},
+            </if>
+            <if test="settlementTime != null "> 
+                settlementTime = #{settlementTime},
+            </if>
+            <if test="updateTime != null "> 
+                updateTime = #{updateTime},
+            </if>
+            <if test="goodsLength != null "> 
+                goodsLength = #{goodsLength,jdbcType=NUMERIC},
+            </if>
+            <if test="goodsWidth != null "> 
+                goodsWidth = #{goodsWidth,jdbcType=NUMERIC},
+            </if>
+            <if test="goodsHeight != null "> 
+                goodsHeight = #{goodsHeight,jdbcType=NUMERIC},
+            </if>
+            <if test="goodsTotalWeight != null "> 
+                goodsTotalWeight = #{goodsTotalWeight,jdbcType=NUMERIC},
+            </if>
+            <if test="cargoName != null "> 
+                cargoName = #{cargoName,jdbcType=VARCHAR},
+            </if>
+            <if test="deliveryType != null "> 
+                deliveryType = #{deliveryType,jdbcType=VARCHAR},
+            </if>
+            <if test="deliveryLongitude != null "> 
+                deliveryLongitude = #{deliveryLongitude,jdbcType=NUMERIC},
+            </if>
+            <if test="deliveryLatitude != null "> 
+                deliveryLatitude = #{deliveryLatitude,jdbcType=NUMERIC},
+            </if>
+            <if test="takeOrderTime != null "> 
+                takeOrderTime = #{takeOrderTime},
+            </if>
+            <if test="takeGoodsTime != null "> 
+                takeGoodsTime = #{takeGoodsTime},
+            </if>
+            <if test="payTime != null "> 
+                payTime = #{payTime},
+            </if>
+            <if test="globalnodePrice != null "> 
+                globalnodePrice = #{globalnodePrice,jdbcType=NUMERIC},
+            </if>
+            <if test="confirmReceiptTime != null "> 
+                confirmReceiptTime = #{confirmReceiptTime},
+            </if>
+            <if test="packageTime != null "> 
+                packageTime = #{packageTime},
+            </if>
+            <if test="robPoolTime != null "> 
+                robPoolTime = #{robPoolTime},
+            </if>
+            <if test="goodsTotalVolume != null "> 
+                goodsTotalVolume = #{goodsTotalVolume,jdbcType=NUMERIC},
+            </if>
+            <if test="effThird != null "> 
+                effThird = #{effThird,jdbcType=NUMERIC},
+            </if>
+            <if test="effRecp != null "> 
+                effRecp = #{effRecp,jdbcType=NUMERIC},
+            </if>
+        </set>
+         where id=#{id,jdbcType=INTEGER}
+	</update>	
+
+	<delete id="deleteByPrimaryKey">
+		delete from order_short where id = #{id,jdbcType=INTEGER}
+	</delete>	
+
+	<delete id="delete" parameterType="com.weilai.appuser.core.model.OrderShort">
+		delete from order_short
+		<where>
+			<if test="id != null">
+				id = #{id,jdbcType=INTEGER}
+			</if>
+			<include refid="other-condition" />
+		</where>
+	</delete>	
+		
+</mapper>
+

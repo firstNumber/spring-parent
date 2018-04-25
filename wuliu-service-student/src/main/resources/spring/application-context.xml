@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans default-init-method="init" default-destroy-method="destroy"
+	xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+  http://www.springframework.org/schema/beans/spring-beans.xsd  
+  http://www.springframework.org/schema/context  
+  http://www.springframework.org/schema/context/spring-context.xsd  ">
+
+	<!-- 自动扫描 -->
+	<context:component-scan base-package="com.weilai.*" use-default-filters="false">
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/> 
+	 </context:component-scan>
+	 
+	 <!-- 获取spring上下文 的util类 -->
+	<bean id="springContextUtil" class="com.weilai.common.util.SpringContextUtil" />
+	
+	<import resource="classpath:spring/spring-mybatis.xml" />
+	<import resource="classpath:spring/dubbo-provider.xml" />
+	<import resource="classpath:spring/spring-rabbit.xml" />
+
+	<!-- 将多个配置文件读取到容器中，交给Spring管理 -->
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<!-- 这里支持多种寻址方式：classpath和file -->
+				<value>classpath:database.properties</value>
+				<value>classpath:jedis.properties</value>
+				<value>classpath:dubbo.properties</value>
+				<value>classpath:rabbitmq.properties</value>
+			</list>
+		</property>
+	</bean>
+
+</beans>
