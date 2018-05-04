@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-base-web" />
+        <module name="spring-bizservice-user" />
+        <module name="spring-common" />
+        <module name="spring-core-new" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="spring-base-web" target="1.8" />
+      <module name="spring-bizservice-parent" target="1.8" />
+      <module name="spring-bizservice-user" target="1.8" />
+      <module name="spring-common" target="1.8" />
+      <module name="spring-core-new" target="1.8" />
+      <module name="spring-core-parent" target="1.8" />
+      <module name="spring-parent" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-core-parent/spring-base-web/spring-base-web.iml" filepath="$PROJECT_DIR$/spring-core-parent/spring-base-web/spring-base-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-parent.iml" filepath="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/spring-bizservice-user.iml" filepath="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/spring-bizservice-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-core-parent/spring-common/spring-common.iml" filepath="$PROJECT_DIR$/spring-core-parent/spring-common/spring-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-core-parent/spring-core-new/spring-core-new.iml" filepath="$PROJECT_DIR$/spring-core-parent/spring-core-new/spring-core-new.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-core-parent/spring-core-parent.iml" filepath="$PROJECT_DIR$/spring-core-parent/spring-core-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-parent.iml" filepath="$PROJECT_DIR$/spring-parent.iml" />
+    </modules>
+  </component>
+</project>
