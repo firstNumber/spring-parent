@@ -1,8 +1,10 @@
 package com.spring.bizservice.user.controller;
 
+import com.spring.bizservice.user.service.UserService;
 import com.spring.core.dto.respones.ResultBean;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -19,8 +21,12 @@ import java.util.Map;
 @RequestMapping("/user")
 public class UserController {
     private Logger logger = LoggerFactory.getLogger(UserController.class);
+
+    @Autowired
+    public UserService userService;
+
     @RequestMapping(value ="/getUserInfo/{userId}",method = RequestMethod.GET)
     public ResultBean<Map<String,Object>> getUserInfo(@PathVariable("userId") Long userId){
-        return  new ResultBean<>(userId.intValue(),"获得成功");
+        return userService.getUserInfoByUser(userId);
     }
 }

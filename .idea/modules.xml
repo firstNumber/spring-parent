@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-core-parent/spring-base-generator/spring-base-generator.iml" filepath="$PROJECT_DIR$/spring-core-parent/spring-base-generator/spring-base-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-core-parent/spring-base-mysql/spring-base-mysql.iml" filepath="$PROJECT_DIR$/spring-core-parent/spring-base-mysql/spring-base-mysql.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-core-parent/spring-base-web/spring-base-web.iml" filepath="$PROJECT_DIR$/spring-core-parent/spring-base-web/spring-base-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-core-parent/spring-bean/spring-bean.iml" filepath="$PROJECT_DIR$/spring-core-parent/spring-bean/spring-bean.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-parent.iml" filepath="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/spring-bizservice-user.iml" filepath="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/spring-bizservice-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-core-parent/spring-common/spring-common.iml" filepath="$PROJECT_DIR$/spring-core-parent/spring-common/spring-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-core-parent/spring-core-new/spring-core-new.iml" filepath="$PROJECT_DIR$/spring-core-parent/spring-core-new/spring-core-new.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-core-parent/spring-core-parent.iml" filepath="$PROJECT_DIR$/spring-core-parent/spring-core-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-dataservice-parent/spring-dataservice-parent.iml" filepath="$PROJECT_DIR$/spring-dataservice-parent/spring-dataservice-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-dataservice-parent/spring-dataservice-user/spring-dataservice-user.iml" filepath="$PROJECT_DIR$/spring-dataservice-parent/spring-dataservice-user/spring-dataservice-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-parent.iml" filepath="$PROJECT_DIR$/spring-parent.iml" />
     </modules>
   </component>

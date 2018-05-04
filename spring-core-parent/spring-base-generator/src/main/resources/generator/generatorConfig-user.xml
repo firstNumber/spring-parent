@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <context id="Mysql" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+        <property name="javaFileEncoding" value="utf-8"/>
+
+        <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+            <property name="mappers" value="tk.mybatis.mapper.common.Mapper"/>
+            <!-- caseSensitive默认false，当数据库表名区分大小写时，可以将该属性设置为true -->
+            <property name="caseSensitive" value="true"/>
+        </plugin>
+
+        <!--<commentGenerator type="com.tango.MyCommentGenerator"/>-->
+
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/lyztest"
+                        userId="root" password="123456">
+        </jdbcConnection>
+
+        <!--Model-->
+        <javaModelGenerator targetPackage="com.spring.bean.entity.user"
+                            targetProject="../../spring-core-parent/spring-bean/src/main/java" >
+         <property name="rootClass" value="com.spring.bean.base.BaseModel"/>
+        </javaModelGenerator>
+        <!--mapper.xml-->
+        <sqlMapGenerator targetPackage="mappers"
+                         targetProject="../../spring-bizservice-parent/spring-bizservice-user/src/main/resources"/>
+        <!--Dao-->
+        <javaClientGenerator targetPackage="com.spring.bizservice.user.mapper" type="XMLMAPPER"
+                             targetProject="../../spring-bizservice-parent/spring-bizservice-user/src/main/java"/>
+
+        <!--<table tableName="user_%" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <table tableName="user" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+    </context>
+</generatorConfiguration>
