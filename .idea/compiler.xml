@@ -10,9 +10,11 @@
         <module name="spring-base-mysql" />
         <module name="spring-base-web" />
         <module name="spring-bean" />
+        <module name="spring-bizservice-house" />
         <module name="spring-bizservice-user" />
         <module name="spring-common" />
         <module name="spring-core-new" />
+        <module name="spring-could-register" />
         <module name="spring-dataservice-user" />
         <module name="tango-base-generator" />
       </profile>
@@ -22,11 +24,14 @@
       <module name="spring-base-mysql" target="1.8" />
       <module name="spring-base-web" target="1.8" />
       <module name="spring-bean" target="1.7" />
+      <module name="spring-bizservice-house" target="1.8" />
       <module name="spring-bizservice-parent" target="1.8" />
       <module name="spring-bizservice-user" target="1.8" />
+      <module name="spring-cloud-register" target="1.8" />
       <module name="spring-common" target="1.8" />
       <module name="spring-core-new" target="1.8" />
       <module name="spring-core-parent" target="1.8" />
+      <module name="spring-could-register" target="1.8" />
       <module name="spring-dataservice-parent" target="1.8" />
       <module name="spring-dataservice-user" target="1.8" />
       <module name="spring-parent" target="1.8" />

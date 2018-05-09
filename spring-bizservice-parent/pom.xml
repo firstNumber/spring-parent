@@ -17,6 +17,7 @@
     <url>http://maven.apache.org/</url>
     <modules>
         <module>spring-bizservice-user</module>
+        <module>spring-bizservice-house</module>
     </modules>
 
     <dependencies>

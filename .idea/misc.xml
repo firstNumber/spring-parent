@@ -10,6 +10,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/spring-bizservice-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-parent/pom.xml" />
         <option value="$PROJECT_DIR$/spring-dataservice-parent/pom.xml" />
       </set>
     </option>

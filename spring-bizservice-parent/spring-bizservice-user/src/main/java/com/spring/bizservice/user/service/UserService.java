@@ -24,6 +24,7 @@ public class UserService {
         User u2 =userMapper.selectOne(u);
         Map<String,Object> map = new HashMap<>();
         map.put("user",u2);
+        map.put("hourse","bigHourse");
         return  new ResultBean<>(map);
     }
 }
