@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 import java.util.Map;
@@ -18,4 +19,7 @@ import java.util.Map;
 public interface UserFeignClient {
     @RequestMapping(value = "/user/getUserInfo/{userId}", method = RequestMethod.GET, consumes = "application/json")
     public ResultBean<Map<String, Object>> getHouseByUid(@PathVariable("userId") Long uid);
+
+    @RequestMapping(value = "/user/getUser/", method = RequestMethod.GET, consumes = "application/json")
+    public ResultBean<Map<String, Object>> getUser(@RequestParam("userId") Long uid);
 }

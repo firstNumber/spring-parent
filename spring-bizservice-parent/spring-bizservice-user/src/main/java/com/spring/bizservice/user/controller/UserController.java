@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
@@ -31,6 +32,13 @@ public class UserController {
     @RequestMapping(value = "/getUserInfo/{userId}", method = RequestMethod.GET)
     @RoleAuth
     public ResultBean<Map<String, Object>> getUserInfo(@PathVariable("userId") Long userId) {
+        return userService.getUserInfoByUser(userId);
+    }
+
+    @RequestMapping(value = "/getUser/", method = RequestMethod.GET)
+    @RoleAuth
+    public ResultBean<Map<String, Object>> getUser(@RequestParam("userId") Long userId) {
+        System.out.println("123");
         return userService.getUserInfoByUser(userId);
     }
 }
