@@ -4,7 +4,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-core-parent/spring-base-generator/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -21,6 +21,8 @@
     <ignored path="$PROJECT_DIR$/spring-cloud-parent/spring-could-register/target/" />
     <ignored path="$PROJECT_DIR$/spring-cloud-parent/target/" />
     <ignored path="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-house/target/" />
+    <ignored path="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo1/target/" />
+    <ignored path="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,41 +35,12 @@
       <FILTER>com.spring.bizservice.user.*</FILTER>
     </SUITE>
   </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HouseController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-house/src/main/java/com/spring/bizservice/house/controller/HouseController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="34" column="69" lean-forward="false" selection-start-line="34" selection-start-column="69" selection-end-line="34" selection-end-column="69" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/java/com/spring/bizservice/user/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="40" column="34" lean-forward="true" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserFeignClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-house/src/main/java/com/spring/bizservice/house/feign/UserFeignClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="23" column="64" lean-forward="false" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -75,6 +48,7 @@
         <option value="Tag Library Descriptor" />
         <option value="AnnotationType" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -83,7 +57,6 @@
     <findStrings>
       <find>mysql</find>
       <find>username</find>
-      <find>UserMapper</find>
       <find>om.spring.core.base.mapper.BaseMapper</find>
       <find>com.spring.core.base.mapper.BaseMapper</find>
       <find>spring.datasource</find>
@@ -92,13 +65,27 @@
       <find>spring-data-commons</find>
       <find>jdbc</find>
       <find>123</find>
+      <find>[\u4e00-\u9fa5]</find>
+      <find>responseString</find>
+      <find>生成Controller失败</find>
+      <find>generatedJavaFiles</find>
+      <find>mybatis</find>
+      <find>user</find>
+      <find>controller-restful.ftl</find>
+      <find>getSer</find>
+      <find>UserMapper</find>
+      <find>demo</find>
     </findStrings>
     <replaceStrings>
       <replace />
     </replaceStrings>
     <dirStrings>
-      <dir>D:\IntelliJIDEA\workespacef\spring-parent</dir>
       <dir>D:\IntelliJIDEA\workespacef\spring-parent\spring-bizservice-parent\spring-bizservice-user</dir>
+      <dir>D:\IntelliJIDEA\workespacef\spring-parent</dir>
+      <dir>D:\IntelliJIDEA\workespacef\spring-parent\spring-bizservice-parent\spring-bizservice-demo</dir>
+      <dir>D:\IntelliJIDEA\workespacef\spring-parent\spring-bizservice-parent\spring-bizservice-demo1\src\main\java\com\spring\bizservice\user</dir>
+      <dir>D:\IntelliJIDEA\workespacef\spring-parent\spring-bizservice-parent\spring-bizservice-demo1\src\main\java\com\spring</dir>
+      <dir>D:\IntelliJIDEA\workespacef\spring-parent\spring-bizservice-parent\spring-bizservice-demo1\src\main\java\com\spring\bizservice\demo\ztool</dir>
     </dirStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -109,33 +96,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/java/com/spring/bizservice/user/config/DruidConfig.java" />
-        <option value="$PROJECT_DIR$/spring-bizservice-parent/pom.xml" />
-        <option value="D:/m22/repository/tk/mybatis/mapper/3.4.2/mapper-3.4.2.jar!/tk/mybatis/mapper/common/Mapper.class" />
-        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/java/com/spring/bizservice/user/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/java/com/spring/bizservice/user/config/MyBatisMapperScannerConfig.java" />
-        <option value="$PROJECT_DIR$/spring-core-parent/spring-base-mysql/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-core-parent/spring-base-mysql/src/main/java/com/spring/core/base/mapper/BaseMapper.java" />
-        <option value="$PROJECT_DIR$/spring-core-parent/spring-base-mysql/src/main/java/com/spring/core/base/mapper/provider/BatchLogicInsertMapperProvider.java" />
-        <option value="$PROJECT_DIR$/spring-core-parent/spring-base-mysql/src/main/java/com/spring/core/base/mapper/BatchLogicInsertMapper.java" />
-        <option value="$PROJECT_DIR$/spring-core-parent/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/java/com/spring/bizservice/user/config/MyBatisConfig.java" />
-        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/java/com/spring/bizservice/user/config/SwaggerConfig.java" />
-        <option value="$PROJECT_DIR$/spring-core-parent/spring-base-web/src/main/java/com/spring/core/web/annotation/Role.java" />
-        <option value="$PROJECT_DIR$/spring-core-parent/spring-base-web/src/main/java/com/spring/core/web/annotation/RoleAuth.java" />
-        <option value="$PROJECT_DIR$/spring-core-parent/spring-base-web/src/main/java/com/spring/core/web/interceptor/AuthInterceptor.java" />
-        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/java/com/spring/bizservice/user/WebConfiguration.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-register/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-cloud-parent/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-cloud-parent/spring-could-register/src/main/java/com/spring/App.java" />
         <option value="$PROJECT_DIR$/spring-cloud-parent/spring-could-register/src/test/java/com/spring/AppTest.java" />
         <option value="$PROJECT_DIR$/spring-cloud-parent/spring-could-register/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/spring-cloud-parent/spring-could-register/pom.xml" />
         <option value="D:/m22/repository/org/springframework/cloud/spring-cloud-netflix-eureka-server/1.3.4.RELEASE/spring-cloud-netflix-eureka-server-1.3.4.RELEASE.jar!/org/springframework/cloud/netflix/eureka/server/EurekaServerConfigBean.class" />
         <option value="$PROJECT_DIR$/spring-cloud-parent/spring-could-register/src/main/java/com/spring/cloud/SpringRegisterServiceApplication.java" />
         <option value="$PROJECT_DIR$/spring-cloud-parent/spring-could-register/src/main/resources/application-test.properties" />
-        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/java/com/spring/bizservice/user/UserBizServiceApplication.java" />
         <option value="$PROJECT_DIR$/spring-cloud-parent/spring-could-register/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/resources/application-test.properties" />
         <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-house/pom.xml" />
@@ -148,18 +114,39 @@
         <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-house/src/main/java/com/spring/bizservice/house/service/HourseService.java" />
         <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-house/src/main/java/com/spring/bizservice/house/HouseApplication.java" />
         <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-house/src/main/java/com/spring/bizservice/house/config/FastJSONConfig.java" />
-        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/java/com/spring/bizservice/user/service/UserService.java" />
         <option value="D:/m22/repository/org/springframework/spring-test/4.3.10.RELEASE/spring-test-4.3.10.RELEASE.jar!/org/springframework/test/web/servlet/request/MockMvcRequestBuilders.class" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="D:/m22/repository/org/springframework/spring-test/4.3.10.RELEASE/spring-test-4.3.10.RELEASE.jar!/org/springframework/test/web/servlet/setup/MockMvcBuilders.class" />
         <option value="D:/m22/repository/org/springframework/spring-test/4.3.10.RELEASE/spring-test-4.3.10.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunAfterTestMethodCallbacks.class" />
         <option value="D:/m22/repository/org/springframework/spring-test/4.3.10.RELEASE/spring-test-4.3.10.RELEASE.jar!/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.class" />
-        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/test/java/one/FunctionOneTest.java" />
         <option value="$PROJECT_DIR$/a.log" />
         <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-house/src/main/java/com/spring/bizservice/house/controller/HouseController.java" />
         <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-house/src/main/java/com/spring/bizservice/house/feign/UserFeignClient.java" />
         <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/java/com/spring/bizservice/user/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-house/src/main/java/com/spring/bizservice/house/controller/HouseController.java" />
+        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/test/java/two/FunctionTwo.java" />
+        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/test/java/two/Ball.java" />
+        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/java/com/spring/bizservice/user/service/UserService.java" />
+        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/test/java/two/FunctionTwoTest.java" />
+        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/test/java/one/FunctionOneTest.java" />
+        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/test/java/third/FunctionThird.java" />
+        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/java/com/spring/bizservice/user/config/MyBatisMapperScannerConfig.java" />
+        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/java/com/spring/bizservice/user/config/FastJSONConfig.java" />
+        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/java/com/spring/bizservice/user/UserBizServiceApplication.java" />
+        <option value="D:/m22/repository/tk/mybatis/mapper/3.4.2/mapper-3.4.2.jar!/tk/mybatis/mapper/common/Mapper.class" />
+        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo1/src/main/java/com/spring/bizservice/user/tool/StringUtil.java" />
+        <option value="D:/m22/repository/org/mybatis/generator/mybatis-generator-core/1.3.2/mybatis-generator-core-1.3.2.jar!/org/mybatis/generator/api/MyBatisGenerator.class" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo1/src/main/java/com/spring/bizservice/user/tool/ProjectConstant.java" />
+        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo1/src/main/java/com/spring/bizservice/user/tool/CodeGenerator.java" />
+        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo1/src/main/java/com/spring/bizserivce/demo/web/UserController.java" />
+        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo1/src/main/java/com/spring/bizservice/demo/tool/ProjectConstant.java" />
+        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo1/src/main/java/com/spring/bizservice/demo/tool/CodeGenerator.java" />
+        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo1/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo1/src/main/java/com/spring/bizservice/demo/ztool/ProjectConstant.java" />
+        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo1/src/main/java/com/spring/bizservice/demo/web/DemoController.java" />
+        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo1/src/main/java/com/spring/bizservice/demo/ztool/CodeGenerator.java" />
+        <option value="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-bizservice-parent/pom.xml" />
       </list>
     </option>
   </component>
@@ -188,18 +175,24 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="spring-base-generator" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="spring-bizservice-user" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="spring-base-generator" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="spring-bizservice-user" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="spring-base-generator" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="spring-bizservice-user" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="mybatis-generator" type="36feed69:MavenProjectsStructure$PluginNode" />
+          <item name="clean" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-bizservice-user" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="docker" type="36feed69:MavenProjectsStructure$PluginNode" />
         </path>
       </expand>
       <select />
@@ -212,11 +205,11 @@
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
+      <flattenPackages ProjectPane="false" />
       <showMembers />
       <showModules />
       <showLibraryContents />
-      <hideEmptyPackages />
+      <hideEmptyPackages ProjectPane="true" />
       <abbreviatePackageNames />
       <autoscrollToSource />
       <autoscrollFromSource />
@@ -225,7 +218,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -238,29 +230,18 @@
               <item name="spring-parent" type="462c0819:PsiDirectoryNode" />
               <item name="spring-bizservice-parent" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="spring-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-bizservice-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-bizservice-house" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-bizservice-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-bizservice-user" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="spring.boot" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -276,10 +257,15 @@
     <property name="RequestMappingsPanelOrder2" value="2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IntelliJIDEA\workespacef\spring-parent\spring-bizservice-parent\spring-bizservice-demo1\src\main\java\com\spring\bizserivce\user\web" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IntelliJIDEA\workespacef\spring-parent\spring-bizservice-parent\spring-bizservice-demo1\src\test\resources\generator\template" />
+      <recent name="D:\IntelliJIDEA\workespacef\spring-parent\spring-bizservice-parent\spring-bizservice-demo1\src\main\java\com\spring\bizservice\user\tool" />
+      <recent name="D:\IntelliJIDEA\workespacef\spring-parent\spring-bizservice-parent\spring-bizservice-demo1\src\main\java\com\spring\bizservice\user\service" />
+      <recent name="D:\IntelliJIDEA\workespacef\spring-parent\spring-bizservice-parent\spring-bizservice-demo1\src\main\java\com\spring\bizservice\user\controller" />
       <recent name="D:\IntelliJIDEA\workespacef\spring-parent\spring-core-parent\tango-base-generator\src\main\resources\generator" />
-      <recent name="D:\IntelliJIDEA\workespacef\spring-parent\spring-bizservice-parent\spring-bizservice-user\src\main\resources" />
-      <recent name="D:\IntelliJIDEA\workespacef\spring-parent\spring-bizservice-parent\spring-bizservice-user" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -294,56 +280,44 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FunctionOneTest">
-    <configuration name="FunctionOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.CodeGenerator (1)">
+    <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="one.*" />
+          <option name="PATTERN" value="com.spring.bizservice.user.tool.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="spring-bizservice-user" />
+      <option name="MAIN_CLASS_NAME" value="com.spring.bizservice.user.tool.CodeGenerator" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="one" />
-      <option name="MAIN_CLASS_NAME" value="one.FunctionOneTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
+      <module name="spring-bizservice-demo1" />
       <envs />
-      <patterns />
     </configuration>
-    <configuration name="FunctionOneTest.testOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="one.*" />
+          <option name="PATTERN" value="com.spring.bizservice.demo.ztool.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="spring-bizservice-user" />
+      <option name="MAIN_CLASS_NAME" value="com.spring.bizservice.demo.ztool.CodeGenerator" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="one" />
-      <option name="MAIN_CLASS_NAME" value="one.FunctionOneTest" />
-      <option name="METHOD_NAME" value="testOne" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
+      <module name="spring-bizservice-demo1" />
       <envs />
-      <patterns />
     </configuration>
     <configuration name="HouseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -469,19 +443,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Spring Boot.SpringRegisterServiceApplication" />
-      <item index="1" class="java.lang.String" itemvalue="Spring Boot.UserBizServiceApplication" />
-      <item index="2" class="java.lang.String" itemvalue="Spring Boot.HouseApplication" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.FunctionOneTest.testOne" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.FunctionOneTest" />
+      <item index="0" class="java.lang.String" itemvalue="Spring Boot.UserBizServiceApplication" />
+      <item index="1" class="java.lang.String" itemvalue="Spring Boot.HouseApplication" />
+      <item index="2" class="java.lang.String" itemvalue="Spring Boot.SpringRegisterServiceApplication" />
+      <item index="3" class="java.lang.String" itemvalue="Application.CodeGenerator" />
+      <item index="4" class="java.lang.String" itemvalue="Application.CodeGenerator (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Spring Boot.HouseApplication" />
-        <item index="1" class="java.lang.String" itemvalue="Spring Boot.UserBizServiceApplication" />
-        <item index="2" class="java.lang.String" itemvalue="Spring Boot.SpringRegisterServiceApplication" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.FunctionOneTest.testOne" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.FunctionOneTest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.CodeGenerator (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Application.CodeGenerator" />
+        <item index="2" class="java.lang.String" itemvalue="Spring Boot.UserBizServiceApplication" />
+        <item index="3" class="java.lang.String" itemvalue="Spring Boot.SpringRegisterServiceApplication" />
+        <item index="4" class="java.lang.String" itemvalue="Spring Boot.HouseApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -498,43 +472,48 @@
       <workItem from="1525396223570" duration="58946000" />
       <workItem from="1525680046171" duration="14322000" />
       <workItem from="1526275193376" duration="7552000" />
+      <workItem from="1531121926636" duration="1853000" />
+      <workItem from="1531986701647" duration="8816000" />
+      <workItem from="1532942969749" duration="6100000" />
+      <workItem from="1533088080046" duration="10651000" />
+      <workItem from="1534815867600" duration="8950000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FunctionOneTest_testOne - 2018.05.15 at 11h 39m 03s.xml">
+    <history-entry file="FunctionOneTest_testOne - 2018.05.15 at 16h 40m 39s.xml">
       <configuration name="FunctionOneTest.testOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FunctionOneTest_testOne - 2018.05.15 at 11h 39m 51s.xml">
+    <history-entry file="FunctionOneTest_testOne - 2018.05.15 at 16h 42m 35s.xml">
       <configuration name="FunctionOneTest.testOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FunctionOneTest_testOne - 2018.05.15 at 11h 42m 02s.xml">
+    <history-entry file="FunctionOneTest_testOne - 2018.05.15 at 16h 45m 27s.xml">
       <configuration name="FunctionOneTest.testOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FunctionOneTest_testOne - 2018.05.15 at 11h 43m 29s.xml">
+    <history-entry file="FunctionOneTest_testOne - 2018.05.15 at 17h 14m 18s.xml">
       <configuration name="FunctionOneTest.testOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FunctionOneTest_testOne - 2018.05.15 at 11h 46m 24s.xml">
-      <configuration name="FunctionOneTest.testOne" configurationId="JUnit" />
+    <history-entry file="FunctionTwoTest - 2018.05.15 at 17h 14m 13s.xml">
+      <configuration name="FunctionTwoTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FunctionOneTest_testOne - 2018.05.15 at 11h 46m 52s.xml">
-      <configuration name="FunctionOneTest.testOne" configurationId="JUnit" />
+    <history-entry file="FunctionTwoTest_testFun - 2018.05.15 at 16h 42m 01s.xml">
+      <configuration name="FunctionTwoTest.testFun" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FunctionOneTest_testOne - 2018.05.15 at 11h 50m 24s.xml">
-      <configuration name="FunctionOneTest.testOne" configurationId="JUnit" />
+    <history-entry file="FunctionTwoTest_testFun - 2018.05.15 at 16h 44m 52s.xml">
+      <configuration name="FunctionTwoTest.testFun" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FunctionOneTest_testOne - 2018.05.15 at 11h 51m 27s.xml">
-      <configuration name="FunctionOneTest.testOne" configurationId="JUnit" />
+    <history-entry file="FunctionTwoTest_testFun - 2018.05.15 at 17h 13m 38s.xml">
+      <configuration name="FunctionTwoTest.testFun" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FunctionOneTest_testOne - 2018.05.15 at 11h 54m 31s.xml">
-      <configuration name="FunctionOneTest.testOne" configurationId="JUnit" />
+    <history-entry file="FunctionTwoTest_testFun - 2018.05.16 at 11h 05m 25s.xml">
+      <configuration name="FunctionTwoTest.testFun" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FunctionOneTest_testOne - 2018.05.15 at 11h 55m 13s.xml">
-      <configuration name="FunctionOneTest.testOne" configurationId="JUnit" />
+    <history-entry file="FunctionTwoTest_testFun - 2018.05.16 at 11h 05m 36s.xml">
+      <configuration name="FunctionTwoTest.testFun" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85371000" />
+    <option name="totallyTimeSpent" value="141551000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -547,10 +526,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5021322" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30877572" sideWeight="0.50319827" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -559,55 +537,30 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.49434572" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41386783" sideWeight="0.4978678" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32286024" sideWeight="0.4978678" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.4978678" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="13" side_tool="false" content_ui="combo" />
+      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30877572" sideWeight="0.4968017" order="14" side_tool="false" content_ui="combo" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31960997" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26599148" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26865673" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5021322" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.49434572" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21343446" sideWeight="0.4978678" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.4978678" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run Dashboard" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="13" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Analyze Dataflow to" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Analyze Dataflow from" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5056543" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26332623" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -625,17 +578,11 @@
           <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/java/com/spring/bizservice/user/proxy/UserProxy.java</url>
-          <line>16</line>
-          <properties />
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="40" />
+      <option name="time" value="50" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -644,269 +591,92 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spring-cloud-parent/spring-could-register/src/main/resources/application.properties">
+    <entry file="jar://D:/m22/repository/ch/qos/logback/logback-classic/1.1.11/logback-classic-1.1.11.jar!/ch/qos/logback/classic/Logger.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+        <state relative-caret-position="203">
+          <caret line="480" column="0" lean-forward="false" selection-start-line="480" selection-start-column="0" selection-end-line="480" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/java/com/spring/bizservice/user/WebConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-parent/spring-could-register/src/main/java/com/spring/cloud/SpringRegisterServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-parent/spring-could-register/src/main/resources/application-test.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-house/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="53" lean-forward="false" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-house/src/main/java/com/spring/App.java" />
-    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-house/src/test/java/com/spring/AppTest.java" />
-    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-house/src/main/reources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/resources/application-test.properties">
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/java/com/spring/bizservice/user/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="36" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/java/com/spring/bizservice/user/feign/Userfeign.java" />
-    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-house/src/main/reources/application-test.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-core-parent/spring-base-web/src/main/java/com/spring/core/web/interceptor/TimeInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-core-parent/spring-base-web/src/main/java/com/spring/core/web/interceptor/AuthInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/m22/repository/org/springframework/spring-webmvc/4.3.10.RELEASE/spring-webmvc-4.3.10.RELEASE.jar!/org/springframework/web/servlet/HandlerExecutionChain.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/java/com/spring/bizservice/user/proxy/UserProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <caret line="34" column="35" lean-forward="false" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-core-parent/spring-core-new/src/main/java/com/spring/core/dto/respones/ResultBean.java">
+    <entry file="file://$PROJECT_DIR$/spring-core-parent/spring-core-parent.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-741">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="-20">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/resources/mappers/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="63" lean-forward="false" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="63" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/java/com/spring/bizservice/user/feign/UserFeignClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/java/com/spring/bizservice/user/config/FastJSONConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="65" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/java/com/spring/bizservice/user/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-parent/spring-could-register/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="40" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-house/src/main/java/com/spring/bizservice/house/config/FastJSONConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-667">
-          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-core-parent/spring-base-generator/src/main/resources/generator/generatorConfig-user.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-285">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-114">
-          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        <state relative-caret-position="209">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-core-parent/spring-base-generator/src/main/java/com/spring/MyCommentGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2555">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-core-parent/spring-base-generator/src/main/java/com/spring/GeneratorDataServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/m22/repository/org/springframework/spring-test/4.3.10.RELEASE/spring-test-4.3.10.RELEASE.jar!/org/springframework/test/web/servlet/request/MockMvcRequestBuilders.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="27" column="48" lean-forward="false" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/m22/repository/org/springframework/spring-test/4.3.17.RELEASE/spring-test-4.3.17.RELEASE.jar!/org/springframework/test/web/servlet/request/MockMvcRequestBuilders.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="27" column="48" lean-forward="false" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/m22/repository/junit/junit/4.12/junit-4.12.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/java/com/spring/bizservice/user/UserBizServiceApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="38" />
+        <state relative-caret-position="-38">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/m22/repository/org/springframework/spring-test/4.3.10.RELEASE/spring-test-4.3.10.RELEASE.jar!/org/springframework/test/web/servlet/setup/MockMvcBuilders.class">
+    <entry file="jar://D:/m22/repository/org/springframework/boot/spring-boot-autoconfigure/1.5.6.RELEASE/spring-boot-autoconfigure-1.5.6.RELEASE.jar!/org/springframework/boot/autoconfigure/jdbc/DataSourceProperties.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="1254">
+          <caret line="103" column="16" lean-forward="false" selection-start-line="103" selection-start-column="16" selection-end-line="103" selection-end-column="16" />
+          <folding>
+            <element signature="e#3466#3467#0" expanded="true" />
+            <element signature="e#3520#3521#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/m22/repository/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/RunBefores.class">
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/java/com/spring/bizservice/user/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="165">
+          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/m22/repository/org/springframework/spring-test/4.3.10.RELEASE/spring-test-4.3.10.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunAfterTestMethodCallbacks.class">
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/java/com/spring/bizservice/user/mapper/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state relative-caret-position="114">
+          <caret line="9" column="40" lean-forward="false" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/m22/repository/org/springframework/spring-test/4.3.10.RELEASE/spring-test-4.3.10.RELEASE.jar!/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.class">
+    <entry file="jar://D:/m22/repository/tk/mybatis/mapper/3.4.2/mapper-3.4.2.jar!/tk/mybatis/mapper/common/Mapper.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+        <state relative-caret-position="114">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/m22/repository/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-parent/src/main/java/com/spring/bizservice/demo/Function.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/m22/repository/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="17" column="37" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/m22/repository/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="208" column="0" lean-forward="false" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore.swp" />
-    <entry file="file://$PROJECT_DIR$/a.log" />
-    <entry file="jar://D:/m22/repository/org/springframework/spring-core/4.3.10.RELEASE/spring-core-4.3.10.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-core-parent/spring-base-mysql/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="133">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -914,82 +684,318 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/m22/repository/org/mybatis/generator/mybatis-generator-core/1.3.2/mybatis-generator-core-1.3.2.jar!/org/mybatis/generator/api/MyBatisGenerator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2660">
+          <caret line="164" column="36" lean-forward="false" selection-start-line="164" selection-start-column="18" selection-end-line="164" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="168" column="37" lean-forward="false" selection-start-line="168" selection-start-column="37" selection-end-line="168" selection-end-column="37" />
+        <state relative-caret-position="337">
+          <caret line="84" column="21" lean-forward="false" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo/src/main/java/com/spring/bizservice/demo/ztool/StringUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/resources/application-test.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="8" column="152" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="152" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo1/src/main/java/com/spring/bizservice/demo/service/service-impl.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo1/src/main/java/com/spring/bizserivce/user/web/controller-restful.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo1/src/main/java/com/spring/bizservice/demo/controller/DemoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo1/src/main/java/com/spring/bizserivce/demo/web/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="36" column="51" lean-forward="false" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        <state relative-caret-position="152">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-house/src/main/java/com/spring/bizservice/house/HouseApplication.java">
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo1/src/main/java/com/spring/bizservice/demo/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo1/src/main/java/com/spring/bizservice/demo/service/service.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo1/src/main/java/com/spring/bizservice/demo/web/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo1/src/main/java/com/spring/bizservice/demo/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo/src/test/resources/generator/template/service-impl.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo1/src/main/java/com/spring/bizservice/demo/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo1/src/main/java/com/spring/bizservice/demo/dao/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo/src/test/resources/generator/template/controller-restful.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="34" lean-forward="true" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo/src/main/java/com/spring/bizservice/demo/ztool/ProjectConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo1/src/main/java/com/spring/bizservice/demo/web/DemoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo/src/main/java/com/spring/bizservice/demo/model/Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/m22/repository/org/mybatis/generator/mybatis-generator-core/1.3.5/mybatis-generator-core-1.3.5.jar!/org/mybatis/generator/config/ModelType.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/m22/repository/org/mybatis/generator/mybatis-generator-core/1.3.5/mybatis-generator-core-1.3.5.jar!/org/mybatis/generator/config/Context.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="55" column="11" lean-forward="false" selection-start-line="55" selection-start-column="11" selection-end-line="55" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/m22/repository/org/freemarker/freemarker/2.3.26-incubating/freemarker-2.3.26-incubating.jar!/freemarker/template/Configuration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="164" column="32" lean-forward="false" selection-start-line="164" selection-start-column="32" selection-end-line="164" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/m22/repository/org/freemarker/freemarker/2.3.26-incubating/freemarker-2.3.26-incubating.jar!/freemarker/template/TemplateExceptionHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo1/src/main/java/com/spring/bizservice/demo/service/impl/DemoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo1/src/main/java/com/spring/bizservice/demo/service/DemoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo1/src/main/java/com/spring/bizservice/demo/dao/DemoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo/src/test/resources/generator/template/service.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-parent.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="58" lean-forward="false" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo/src/main/java/com/spring/bizservice/demo/ztool/CodeGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="111" column="13" lean-forward="false" selection-start-line="111" selection-start-column="13" selection-end-line="111" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-house/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo/spring-bizservice-demo.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="43" column="17" lean-forward="false" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-parent/spring-could-register/src/main/java/com/spring/cloud/SpringRegisterServiceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-house/src/main/java/com/spring/bizservice/house/service/HourseService.java">
+    <entry file="file://$PROJECT_DIR$/spring-cloud-parent/spring-could-register/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/m22/repository/org/springframework/spring-web/4.3.10.RELEASE/spring-web-4.3.10.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+    <entry file="file://$PROJECT_DIR$/spring-cloud-parent/spring-could-register/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/test/java/one/FunctionOneTest.java">
+    <entry file="file://$PROJECT_DIR$/spring-cloud-parent/spring-could-register/src/main/resources/application-test.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1277#1278#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-house/src/main/java/com/spring/bizservice/house/controller/HouseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="34" column="69" lean-forward="false" selection-start-line="34" selection-start-column="69" selection-end-line="34" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-house/src/main/java/com/spring/bizservice/house/feign/UserFeignClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="23" column="64" lean-forward="false" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/src/main/java/com/spring/bizservice/user/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="40" column="34" lean-forward="true" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1046,7 +1052,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>spring-bizservice-user</last-edited>
+          <last-edited>spring-common</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

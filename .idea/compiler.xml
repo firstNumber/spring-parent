@@ -24,6 +24,7 @@
       <module name="spring-base-mysql" target="1.8" />
       <module name="spring-base-web" target="1.8" />
       <module name="spring-bean" target="1.7" />
+      <module name="spring-bizservice-demo1" target="1.8" />
       <module name="spring-bizservice-house" target="1.8" />
       <module name="spring-bizservice-parent" target="1.8" />
       <module name="spring-bizservice-user" target="1.8" />

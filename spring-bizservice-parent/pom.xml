@@ -18,7 +18,7 @@
     <modules>
         <module>spring-bizservice-user</module>
         <module>spring-bizservice-house</module>
-        <module>spring-bizservice-demo1</module>
+        <module>spring-bizservice-demo</module>
     </modules>
 
     <dependencies>
