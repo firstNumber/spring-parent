@@ -21,20 +21,22 @@ public class HouseController {
 
     @Autowired
     public UserFeignClient userFeignClient;
+
     @RequestMapping(value = "/getHourse/{hourseId}", method = RequestMethod.GET)
-    public ResultBean<Map<String, Object>> getHouseByUid(@PathVariable("hourseId") Long hourseId){
-        ResultBean<Map<String, Object>>  resuklt=userFeignClient.getHouseByUid(hourseId);
+    public ResultBean<Map<String, Object>> getHouseByUid(@PathVariable("hourseId") Long hourseId) {
+        ResultBean<Map<String, Object>> resuklt = userFeignClient.getHouseByUid(hourseId);
         System.out.println(resuklt.toString());
         System.out.println("***");
         return resuklt;
     }
 
     @RequestMapping(value = "/getUser/{hourseId}", method = RequestMethod.GET)
-    public ResultBean<Map<String, Object>> getUser(@PathVariable("hourseId") Long hourseId){
+    public ResultBean<Map<String, Object>> getUser(@PathVariable("hourseId") Long hourseId) {
         System.out.println("啦啦啦啦啦啦");
-        ResultBean<Map<String, Object>>  resuklt=userFeignClient.getUser(hourseId);
+        ResultBean<Map<String, Object>> resuklt = userFeignClient.getUser(hourseId);
         System.out.println(resuklt.toString());
         System.out.println("***");
         return resuklt;
     }
+
 }
