@@ -32,6 +32,7 @@
       <module name="spring-bizservice-house" target="1.8" />
       <module name="spring-bizservice-parent" target="1.8" />
       <module name="spring-bizservice-user" target="1.8" />
+      <module name="spring-cloud-parent" target="1.8" />
       <module name="spring-cloud-register" target="1.8" />
       <module name="spring-common" target="1.8" />
       <module name="spring-core-new" target="1.8" />
