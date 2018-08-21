@@ -23,7 +23,7 @@ public class CodeGenerator {
     private static final String JDBC_PASSWORD = "123456";
     private static final String JDBC_DIVER_CLASS_NAME = "com.mysql.jdbc.Driver";
 
-    private static final String PROJECT_PATH = System.getProperty("user.dir")+"/spring-bizservice-parent/spring-bizservice-demo1";//项目在硬盘上的基础路径
+    private static final String PROJECT_PATH = System.getProperty("user.dir")+"/spring-bizservice-parent/spring-bizservice-demo";//项目在硬盘上的基础路径
    /* private static final String PROJECT_PATH = "G:/fish/haoniu-manager";//项目在硬盘上的基础路径*/
     private static final String TEMPLATE_FILE_PATH = PROJECT_PATH + "/src/test/resources/generator/template";//模板位置
 

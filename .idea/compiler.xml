@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spirng-bizservice-dector" />
         <module name="spring-base-generator" />
         <module name="spring-base-mysql" />
         <module name="spring-base-web" />
         <module name="spring-bean" />
+        <module name="spring-bizservice-demo" />
         <module name="spring-bizservice-house" />
         <module name="spring-bizservice-user" />
         <module name="spring-common" />
@@ -20,10 +22,12 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
+      <module name="spirng-bizservice-dector" target="1.8" />
       <module name="spring-base-generator" target="1.8" />
       <module name="spring-base-mysql" target="1.8" />
       <module name="spring-base-web" target="1.8" />
       <module name="spring-bean" target="1.7" />
+      <module name="spring-bizservice-demo" target="1.8" />
       <module name="spring-bizservice-demo1" target="1.8" />
       <module name="spring-bizservice-house" target="1.8" />
       <module name="spring-bizservice-parent" target="1.8" />

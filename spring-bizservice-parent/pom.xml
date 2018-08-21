@@ -19,6 +19,7 @@
         <module>spring-bizservice-user</module>
         <module>spring-bizservice-house</module>
         <module>spring-bizservice-demo</module>
+        <module>spirng-bizservice-dector</module>
     </modules>
 
     <dependencies>

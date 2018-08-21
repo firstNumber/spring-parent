@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-bizservice-parent/spirng-bizservice-dector/spirng-bizservice-dector.iml" filepath="$PROJECT_DIR$/spring-bizservice-parent/spirng-bizservice-dector/spirng-bizservice-dector.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-core-parent/spring-base-generator/spring-base-generator.iml" filepath="$PROJECT_DIR$/spring-core-parent/spring-base-generator/spring-base-generator.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-core-parent/spring-base-mysql/spring-base-mysql.iml" filepath="$PROJECT_DIR$/spring-core-parent/spring-base-mysql/spring-base-mysql.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-core-parent/spring-base-web/spring-base-web.iml" filepath="$PROJECT_DIR$/spring-core-parent/spring-base-web/spring-base-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-core-parent/spring-bean/spring-bean.iml" filepath="$PROJECT_DIR$/spring-core-parent/spring-bean/spring-bean.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo.iml" filepath="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo/spring-bizservice-demo.iml" filepath="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-demo/spring-bizservice-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-house/spring-bizservice-house.iml" filepath="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-house/spring-bizservice-house.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-parent.iml" filepath="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/spring-bizservice-user.iml" filepath="$PROJECT_DIR$/spring-bizservice-parent/spring-bizservice-user/spring-bizservice-user.iml" />
