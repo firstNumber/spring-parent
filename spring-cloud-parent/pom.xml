@@ -15,6 +15,7 @@
     <name>Maven</name>
     <modules>
         <module>spring-could-register</module>
+        <module>spring-cloud-apigw</module>
     </modules>
     <!-- FIXME change it to the project's website -->
 </project>

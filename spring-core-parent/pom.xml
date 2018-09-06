@@ -28,11 +28,6 @@
 			<version>1.0</version>
 		</dependency>
 
-        <dependency>
-            <groupId>com.spring</groupId>
-            <artifactId>spring-base-mysql</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
     </dependencies>
 
 

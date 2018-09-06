@@ -1,0 +1,25 @@
+## 当前环境
+spring:
+  profiles:
+    active: dev   # 当前采用dev配置，不同环境下active配置不一
+## zuul
+zuul:
+  ignoredServices: '*'
+  sensitiveHeaders: Cookie,Set-Cookie
+  retryable: true
+  prefix: /api
+  ribbon:
+    eager-load:
+      enabled: true
+  host:
+    socket-timeout-millis: 2000000
+    connect-timeout-millis: 60000
+    max-total-connections: 1000
+    max-per-route-connections: 1000
+  routes:
+#api v1
+## common
+    yy :
+      path: /user/**
+      serviceId: user-biz-service
+      stripPrefix: false
