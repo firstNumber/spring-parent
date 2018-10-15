@@ -37,5 +37,6 @@ public class TestArr<T> extends ArrayList<T> {
 		for(Integer element :newArr){
 			System.out.println(element);
 		}
-    }
+		System.out.println(".ideameiyo u ");
+	}
 }

@@ -177,6 +177,8 @@
                     <executable>D:/Java/jdk1.8.0_112/bin/javac</executable>
                 </configuration>
             </plugin>
+
+
             <!-- Package Docker Image -->
             <plugin>
                 <groupId>com.spotify</groupId>
