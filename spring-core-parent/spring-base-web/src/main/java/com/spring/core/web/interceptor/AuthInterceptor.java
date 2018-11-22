@@ -5,7 +5,7 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.Jwts;
-import netscape.security.ForbiddenTargetException;
+import com.spring.core.excption.ForbiddenException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
@@ -73,26 +73,26 @@ public class AuthInterceptor implements HandlerInterceptor  {
         }
 
         if(StringUtils.isEmpty(auth)){
-            throw new ForbiddenTargetException(AuthInterceptor.ERROR_RESPONSE_AUTH_TOKEN_FAKE);
+            throw new ForbiddenException(AuthInterceptor.ERROR_RESPONSE_AUTH_TOKEN_FAKE);
         }
         Jws<Claims> jwt = null;
 		try {
 			jwt = Jwts.parser().setSigningKey(JWT_SECRET.getBytes("UTF-8")).parseClaimsJws(auth);
 		} catch (ExpiredJwtException e1) {
-			throw new ForbiddenTargetException(AuthInterceptor.ERROR_RESPONSE_AUTH_TOKEN_TIMEOUT);
+			throw new ForbiddenException(AuthInterceptor.ERROR_RESPONSE_AUTH_TOKEN_TIMEOUT);
 		} catch (Exception e1) {
-			throw new ForbiddenTargetException(AuthInterceptor.ERROR_RESPONSE_AUTH_JWTPARSE);
+			throw new ForbiddenException(AuthInterceptor.ERROR_RESPONSE_AUTH_JWTPARSE);
 		}
 		Claims claims = jwt.getBody();
 		String userId = String.valueOf(claims.get("id"));
 		if (StringUtils.isEmpty(userId)) {
 			logger.debug("error:auth.userId.empty");
-			throw new ForbiddenTargetException(AuthInterceptor.ERROR_RESPONSE_AUTH_TOKEN_FAKE);
+			throw new ForbiddenException(AuthInterceptor.ERROR_RESPONSE_AUTH_TOKEN_FAKE);
 		}
 		String userRole = String.valueOf(claims.get("role"));
 		if (StringUtils.isEmpty(userRole)) {
 			logger.debug("error:auth.role.empty");
-			throw new ForbiddenTargetException(AuthInterceptor.ERROR_RESPONSE_AUTH_TOKEN_ROLE);
+			throw new ForbiddenException(AuthInterceptor.ERROR_RESPONSE_AUTH_TOKEN_ROLE);
 		}
         return "";
     }

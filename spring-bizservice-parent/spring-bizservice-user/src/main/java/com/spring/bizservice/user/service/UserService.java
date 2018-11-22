@@ -20,7 +20,7 @@ public class UserService {
 
     public ResultBean<Map<String, Object>> getUserInfoByUser(Long userId) {
         User u  = new User();
-        u.setId(userId.intValue());
+        u.setId(userId);
         User u2 =userMapper.selectOne(u);
         Map<String,Object> map = new HashMap<>();
         map.put("user",u2);

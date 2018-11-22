@@ -1,29 +1,17 @@
 package com.spring.bean.entity.user;
 
+import com.spring.bean.base.BaseModel;
 import javax.persistence.*;
 
 @Table(name = "user")
-public class User {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+public class User extends BaseModel {
 
     private String name;
 
     private Integer age;
 
-    /**
-     * @return id
-     */
-    public Integer getId() {
-        return id;
-    }
+    private String score;
 
-    /**
-     * @param id
-     */
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     /**
      * @return name
@@ -51,5 +39,19 @@ public class User {
      */
     public void setAge(Integer age) {
         this.age = age;
+    }
+
+    /**
+     * @return score
+     */
+    public String getScore() {
+        return score;
+    }
+
+    /**
+     * @param score
+     */
+    public void setScore(String score) {
+        this.score = score;
     }
 }
