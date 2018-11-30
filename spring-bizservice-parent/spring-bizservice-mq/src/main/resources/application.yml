@@ -1,0 +1,18 @@
+spring:
+ profiles:
+   active: dev
+
+mq:
+  infos:
+    - name: order.house
+      exchange: exchange.order.house
+      exchangeType: fanout
+      routingKey: order.house
+      queues:
+        - queue.order.house
+      dltimes:
+        - 60s
+        - 120s
+        - 900s
+        - 3600s
+        - 7200s

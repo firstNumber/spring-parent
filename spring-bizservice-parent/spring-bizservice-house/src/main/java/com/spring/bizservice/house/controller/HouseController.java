@@ -1,5 +1,7 @@
 package com.spring.bizservice.house.controller;
 
+import com.netflix.discovery.converters.Auto;
+import com.spring.bizservice.house.feign.MQFeignClient;
 import com.spring.bizservice.house.feign.UserFeignClient;
 import com.spring.core.dto.respones.ResultBean;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +23,8 @@ public class HouseController {
 
     @Autowired
     public UserFeignClient userFeignClient;
+    @Autowired
+    public MQFeignClient mQFeignClient;
 
     @RequestMapping(value = "/getHourse/{hourseId}", method = RequestMethod.GET)
     public ResultBean<Map<String, Object>> getHouseByUid(@PathVariable("hourseId") Long hourseId) {
@@ -37,6 +41,14 @@ public class HouseController {
         System.out.println(resuklt.toString());
         System.out.println("***");
         return resuklt;
+    }
+
+    @RequestMapping(value = "/userSend/{hourseId}",method = RequestMethod.GET)
+    public  ResultBean<Map<String, Object>>  userSendMq(@PathVariable("hourseId") Long hourseId){
+        System.out.println("我是一个发送者");
+        mQFeignClient.push("order.house",hourseId.toString(),0);
+
+        return new ResultBean<>();
     }
 
 }

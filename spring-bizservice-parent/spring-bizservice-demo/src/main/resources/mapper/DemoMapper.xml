@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.spring.bizservice.demo.dao.DemoMapper">
+  <resultMap id="BaseResultMap" type="com.spring.bizservice.demo.model.Demo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="demoId" jdbcType="INTEGER" property="demoid" />
+    <result column="demoName" jdbcType="VARCHAR" property="demoname" />
+    <result column="demoAge" jdbcType="INTEGER" property="demoage" />
+  </resultMap>
+</mapper>
